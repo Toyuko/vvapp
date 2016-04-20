@@ -231,6 +231,29 @@ $scope.longit = 100.5859120;
             }, function (err) {
                 console.log('failed');
             });
+
+
+ var creatMarker = function(latitude, longitude, idKey, statusValueId, place_id){
+
+    var googleMarker = new google.maps.Marker({
+        coordinates:{
+            latitude: latitude,
+            longitude: longitude,
+        },
+        id: idKey,
+        visible: true,
+        animation: google.maps.Animation.DROP,
+        icon: new google.maps.MarkerImage(
+                getCustomMarkerSymbol(statusValueId),
+                null, // size
+                null, // origin
+                new google.maps.Point( 15, 15 ), // anchor (move to center of marker)
+                new google.maps.Size( 60, 60 ) // scaled size (required for Retina display icon)
+                )
+    });
+    return googleMarker;
+};
+
 $scope.distanceLoc = [];
 var tempCount = 9999999999999999999999999;
         var eventPromise = VenVast.GetAllEvents()

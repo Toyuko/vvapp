@@ -445,4 +445,5 @@ var app = angular.module('starter', ['ionic', 'ngCordova'])
 
       return yearsList;
     };
-  });
+
+    });
