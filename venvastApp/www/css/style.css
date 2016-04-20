@@ -15,11 +15,11 @@ body{
 
 .b {
   /*BG.png*/
-    background: url(../../img/main_bkg.png);
+    background: url(../../img/main_bkg.jpg);
 }
 .background {
   /*BG.png*/
-    background: url(../../img/main_bkg.png) no-repeat
+    background: url(../../img/main_bkg.jpg) no-repeat
     center center fixed;
     -webkit- background-size: cover;
     -moz- background-size: cover;
@@ -27,7 +27,7 @@ body{
     background-size: cover;
    }
  ion-view {
-    background: url(../../img/main_bkg.png)  no-repeat;
+    background: url(../../img/main_bkg.jpg)  no-repeat;
   background-size: cover;
     -webkit- background-size: cover;
     -moz- background-size: cover;
@@ -187,7 +187,7 @@ height: 320px
     //vertical-align: middle;
 }
 .menu-content{
-  background:url('../img/main_bkg.png');
+  background:url('../img/main_bkg.jpg');
   background-size:cover;
   /*background-size: contain;*/
 
@@ -469,7 +469,7 @@ font-size: 40px !important;
 
 
 .background-main{
-   background: url(../../img/main_bkg.png) no-repeat
+   background: url(../../img/main_bkg.jpg) no-repeat
     center center fixed !important;
     -webkit- background-size: cover;
     -moz- background-size: cover;
@@ -508,7 +508,8 @@ hr.style-one {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(232, 233, 234) , rgba(0, 0, 0, 0));
-}
+    opacity: 0.5; 
+  }
 
 .com-soon{
       /* float: right; */
@@ -924,7 +925,7 @@ ion-slide:nth-child(2n) {
 
 
 
-/*TOUY DESIGN CSS STARTS HERE---#######-------------##########-------------------#########------------------------#########*/
+/*OLD DESIGN CSS STARTS HERE---#######-------------##########-------------------#########------------------------#########*/
 
 /*
 @font-face {
@@ -1138,7 +1139,7 @@ h1, h2, h3, h4, h5, h6, p{
 */
 
 
-/*TOUY DESIGN CSS ENDS HERE---#######-------------##########-------------------#########------------------------#########*/
+/*OLD DESIGN CSS ENDS HERE---#######-------------##########-------------------#########------------------------#########*/
 
 
 
@@ -1160,7 +1161,7 @@ h1, h2, h3, h4, h5, h6, p{
     height: 100% !important;
 max-height: 100%  !important;
 /*BG.png*/
-        background: url(../../img/main_bkg.png) no-repeat
+        background: url(../../img/main_bkg.jpg) no-repeat
     center center fixed !important;
     -webkit- background-size: cover !important;
     -moz- background-size: cover !important;
