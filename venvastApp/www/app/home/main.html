@@ -1,0 +1,19 @@
+<ion-view hide-back-button="true" view-title="" cache-view="false">
+
+<!-- //<center>TODAY<sub>{{title}}</sub></center> -->
+<img class="mainHeadImg" src="img/TodayLIVE.png">
+    <ion-content class="has-header; ">
+    <i class="icon ion-chevron-down"></i>
+ <a class="button button-full icon-right button-light selectInterest" ng-click="gotoCategoryModal()" nav-transition="android">
+
+ 	<p style=" 
+      line-height: inherit;position: absolute;color: white; font-family: Avenir-Book; letter-spacing: 6px;">SELECT INTEREST</p></a>
+
+      <div class="bar bar-footer foot-main-event" ng-click="showEventMainModal()">
+  <div class="title eve-foot-tit" style="font-family: Avenir-Book; letter-spacing: 2px;">{{eventTitle}}</div>
+</div>
+
+              <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+
+</ion-view>
