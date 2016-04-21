@@ -14,10 +14,12 @@ body{
 
 
 .b {
-    background: url(../../img/BG.png);
+  /*BG.png*/
+    background: url(../img/main_bkg.png);
 }
 .background {
-    background: url(../../img/BG.png) no-repeat
+  /*BG.png*/
+    background: url(../img/main_bkg.png) no-repeat
     center center fixed;
     -webkit- background-size: cover;
     -moz- background-size: cover;
@@ -25,11 +27,12 @@ body{
     background-size: cover;
    }
  ion-view {
-    background: url(../../img/main_bkg.png) no-repeat ;
+    background: url(../img/main_bkg.png)  no-repeat;
+  background-size: cover;
     -webkit- background-size: cover;
     -moz- background-size: cover;
     -o- background-size: cover;
-    background-size: cover;
+    /*background-size: cover;*/
    }
 
 .bar {
@@ -186,7 +189,9 @@ height: 320px
 .menu-content{
   background:url('../img/main_bkg.png');
   background-size:cover;
-  background-position:left;
+  /*background-size: contain;*/
+
+  background-position: center;
 }
 .ven-nav-btn{
   color:#FFF !important;
@@ -283,9 +288,9 @@ float: right;
   }
 
   #mapEvent {
-width: 100% !important;
-        /*height: 65% !important;*/
-height: 350px !important;
+    width: 100% !important;
+    /* height: 65% !important; */
+    height: 320px !important;
 }
 
 .foot-event{
@@ -334,8 +339,12 @@ margin-top: 15px;
 
 
 .title.title-center.header-item{
+    font-size: 22px;
+    /*border-bottom: 1px solid rgba(255,255,255,0.21) !important;*/
+    letter-spacing: 9px !important;
+        font-weight: bolder !important;
 
-  border-bottom: 1px solid rgba(255,255,255,0.21) !important;
+    margin-left: 20px;
 
 }
 
@@ -460,7 +469,7 @@ font-size: 40px !important;
 
 
 .background-main{
-   background: url(../../img/main_bkg.png) no-repeat
+   background: url(../img/main_bkg.png) no-repeat
     center center fixed !important;
     -webkit- background-size: cover;
     -moz- background-size: cover;
@@ -534,13 +543,83 @@ hr.style-one {
 
 
 
+.head-calen{
+
+  text-align: center;
+
+}
+
+.p-h-calen{
+
+      color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.p2-h-calen{
+color: #DEDEE2;
+}
+
+.low-head-calen{
+  text-align: center;
+
+}
+
+.cont-head-calen{
+  text-align: center;
+  margin-right: 100px
+
+}
+
+.p-lh-calen{
+
+      color: #DEDEE2;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+.p-l2h-calen{
+      color: #DEDEE2;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+.p-ch-calen{
+    color: #DEDEE2;
+    font-size: 12px;
+    margin-top: 48px;
+    /*width: 50%;*/
+}
 
 
+.left-icon-calen{
+    float: left;
+    margin-top: -2px;
+    font-size: 20px;
+    font-size: x-large;
+    color: #DEDEE2;
+    margin-left: 80px;
+}
 
 
+.right-icon-calen{
+    float: right;
+    margin-top: -32px;
+    font-size: 20px;
+    font-size: x-large;
+    color: #DEDEE2;
+    margin-right: -5px;
+
+    /*margin-right: 150px;*/
+}
 
 
-
+.p-ch2-calen{
+    color: #DEDEE2;
+    font-size: 18px;
+    margin-top: 48px;
+}
 
 
 
@@ -572,6 +651,8 @@ hr.style-one {
 
 .ionic_datepicker_popup .font_bold {
   font-weight: bold;
+          font-weight: bold;
+    color: #AAA8AE;
 }
 .ionic_datepicker_popup .padding_top_zero {
   padding-top: 0;
@@ -590,7 +671,7 @@ hr.style-one {
   border-radius: 50%;
 }
 .ionic_datepicker_popup .selected_date {
-  background-color: #383C3B;
+  background-color: rgba(250, 250, 250, 0.31);
   border-radius: 50%;
   color: #fff;
   font-weight: bold;
@@ -626,9 +707,10 @@ hr.style-one {
   color: #aaaaaa !important;
 }
 .ionic_datepicker_popup .popup-body .month_select, .ionic_datepicker_popup .popup-body .year_select {
-  border: none;
-  border-bottom: 1px solid #383C3B;
-  padding: 0;
+    border: none;
+    border-bottom: 0px solid #383C3B;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 .ionic_datepicker_popup .popup-body .month_select .input-label, .ionic_datepicker_popup .popup-body .year_select .input-label {
   padding: 2px 0;
@@ -652,6 +734,9 @@ hr.style-one {
 }
 .ionic_datepicker_popup .popup-body .show_nav .prev_btn_section button {
   padding: 0;
+  font-size: 30px;
+   margin-top: -20px;
+    color: #fff;
 }
 .ionic_datepicker_popup .popup-body .show_nav .next_btn_section {
   padding: 5px 0;
@@ -659,6 +744,9 @@ hr.style-one {
 }
 .ionic_datepicker_popup .popup-body .show_nav .next_btn_section button {
   padding: 0;
+      font-size: 30px;
+       margin-top: -20px;
+    color: #fff;
 }
 .ionic_datepicker_popup .popup-body .button-clear {
   color: #383C3B;
@@ -668,7 +756,7 @@ hr.style-one {
   min-height: 45px;
 }
 .ionic_datepicker_popup .popup-buttons button {
-  background-color: #383C3B;
+background-color: rgba(56, 60, 59, 0);
   border-radius: 0;
   margin-right: 1px;
   color: #ffffff;
@@ -1051,3 +1139,186 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 /*TOUY DESIGN CSS ENDS HERE---#######-------------##########-------------------#########------------------------#########*/
+
+
+
+
+
+
+/*Date css mine*/
+.popup-container
+
+{
+    width: 100% !important;
+    height: 100% !important;
+
+}
+
+.popup-container .popup
+{
+    width: 100% !important;
+    height: 100% !important;
+max-height: 100%  !important;
+/*BG.png*/
+        background: url(../img/main_bkg.png) no-repeat
+    center center fixed !important;
+    -webkit- background-size: cover !important;
+    -moz- background-size: cover !important;
+    -o- background-size: cover !important;
+    background-size: cover !important;
+
+}
+
+
+.ionic_datepicker_popup .popup-body {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+
+
+.ionic_datepicker_popup .popup-body .selected_date_full {
+    background-color: rgba(56, 60, 59, 0) !important;
+    margin-top: -25px !important;
+    font-size: 10px;
+    margin-left: 18px;
+}
+.dates_num {
+  color: #fff !important;
+}
+
+.date_selection{
+      margin-top: 60px;
+}
+
+.ionic_datepicker_popup .popup-buttons button {
+    background-color: rgba(56, 60, 59, 0) !important;
+
+}
+
+
+
+.foot-main-event{
+
+  /*background-color: rgb(0, 0, 0) !important;*/
+  /*background-color:  #000 !important;*/
+    height: 80px !important;
+    background: url(../img/main_bkg.png)  no-repeat;
+  background-size: cover;
+    -webkit- background-size: cover;
+    -moz- background-size: cover;
+    -o- background-size: cover;
+}
+
+
+.foot-venumap{
+    height: 80px !important;
+    background: url(../img/main_bkg.png)  no-repeat;
+  background-size: cover;
+    -webkit- background-size: cover;
+    -moz- background-size: cover;
+    -o- background-size: cover;
+}
+
+
+.foot-venumap .p2{
+
+    margin-top: 15px !important;
+    /* float: right !important; */
+    /* color: #fff !important; */
+    /* margin-right: 10px !important; */
+    font-size: 12px !important;
+    margin-left: 50%;
+  }
+
+.mainHeadImg{
+      width: 170px;
+    /* margin: auto; */
+    margin-top: 13px;
+    margin-left: 110px;
+
+}
+
+.selectInterest p{
+font-weight: 700 !important;
+
+}
+
+
+.header-item center sub{
+
+
+  color: #55CCEE;
+    letter-spacing: 4px !important;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+.icon-right p{
+    letter-spacing: 1.5px;
+        margin-top: 10px;
+}
+
+.selectInterest{
+background-color: rgba(255, 255, 255, 0.05) !important;
+      height: 67px !important;
+        margin-bottom: 0px  !important;
+             margin-top: 0px !important;
+}
+
+
+.icon-right{
+
+  color: #fff !important;
+}
+
+
+.ion-chevron-down{
+    float: right;
+    font-size: 22px;
+    /* font-weight: 100; */
+    color: #fff;
+    margin-top: 22px;
+    margin-right: 10px;
+
+}
+
+
+.ion-calendar.cat-icon{
+
+    margin-right: 10px;
+
+}
+
+
+.ion-close-round.cat-icon{
+
+    margin-left: 10px;
+
+
+}
+
+
+.range-cat{
+
+  border-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFF;
+    font-size: 16px;
+}
+
+.head-calen{
+margin-top: -52px;
+
+}
+.icon-cal-x{
+margin-top: -8px;
+  margin-left: 0px !important;
+}
+
+.date-icon{
+
+  font-size: 13px;
+}
+

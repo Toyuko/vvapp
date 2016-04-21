@@ -1,8 +1,17 @@
-<ion-view hide-back-button="true" cache-view="false" view-title="<center>TODAY<sub>{{title}}</sub></center>">
+<!-- <ion-view hide-back-button="true" cache-view="false" view-title="<center>TODAY<sub>{{title}}</sub></center>">
     <ion-content class="has-header; menu-content">
  <a class="button button-full icon-right ion-chevron-down button-light" nav-transition="android"><p style=" 
       line-height: inherit;position: absolute;color: white;">SELECT INTEREST</p></a>
               <div id="mapEvent" data-tap-disabled="true"></div>
+ -->
+
+<ion-view hide-back-button="true" class="menu-content" view-title="<center>TODAY<sub>{{title}}</sub></center>" cache-view="false">
+    <ion-content class="has-header;  ">
+ <a class="button button-full icon-right ion-chevron-down button-light" ng-click="gotoCategoryModal()" nav-transition="android"><p style=" 
+      line-height: inherit;position: absolute;color: white;">SELECT INTEREST</p></a>
+              <div id="mapEvent" data-tap-disabled="true"></div>
+
+
 
 <div class="event-cont-foot" ng-click="openModal(1)">
 	<p>LEVELS<p>
@@ -10,7 +19,7 @@
 </div>
     </ion-content>
     <div class="bar bar-footer foot-event" ng-click="openModal(2)">
-  <div class="title eve-foot-tit">{{eventTitle}}</div>
+  <div class="title eve-foot-tit">{{eventTitle || Event }}</div>
 </div>
 </ion-view>
 

@@ -89,15 +89,15 @@ var app = angular.module('starter', ['ionic', 'ngCordova'])
             }
         })
 
-        .state('home.subCategory', {
-            url: "/subCategory/",
-            views: {
-                "tab-events": {
+        .state('subCategory', {
+            url: "/subCategory",
+            // views: {
+            //     "tab-events": {
                     templateUrl: "app/home/subCategory.html",
                   controller: "subCategoryCtrl"
                     
-                }
-            }
+            //     }
+            // }
         })
 
         .state('home.eventDetail', {
@@ -445,5 +445,4 @@ var app = angular.module('starter', ['ionic', 'ngCordova'])
 
       return yearsList;
     };
-
-    });
+  });

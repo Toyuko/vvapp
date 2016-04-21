@@ -83,6 +83,8 @@ app.controller('CalenderCtrl', function ($scope,  ionicDatePicker) {
     .controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, ActiveEvent,$cordovaGeolocation ,$http,$ionicModal, ionicDatePicker, $filter, $state, $timeout) {
 $scope.selectedDate = $filter('date')(new Date(), 'MMM dd yyyy');
 
+
+
   $ionicModal.fromTemplateUrl('app/home/catagory.html', {
     scope: $scope,
     animation: 'slide-in-up'
@@ -133,7 +135,7 @@ $scope.groups = [];
 
   $scope.gotoSubCategory = function(){
 $scope.modalCatagory.hide();
-    $state.go('home.subCategory');
+    $state.go('subCategory');
 
   }
   
@@ -192,11 +194,11 @@ $scope.modalCatagory.show();
         $cordovaGeolocation
             .getCurrentPosition(posOptions)
             .then(function (position) {
-                var myLatlng = new google.maps.LatLng(13.7207510, 100.5859120);
+                var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 // console.log(""+position.coords.latitude);
 // console.log(position.coords.longitude);
-$scope.latit = 13.7207510;
-$scope.longit = 100.5859120;
+$scope.latit = position.coords.latitude;
+$scope.longit = position.coords.longitude;
         var mapOptions = {
           center: myLatlng,
           zoom: 15,
@@ -229,31 +231,8 @@ $scope.longit = 100.5859120;
 
                 $scope.mapsf = map;
             }, function (err) {
-                console.log('failed');
+                console.log(err);
             });
-
-
- var creatMarker = function(latitude, longitude, idKey, statusValueId, place_id){
-
-    var googleMarker = new google.maps.Marker({
-        coordinates:{
-            latitude: latitude,
-            longitude: longitude,
-        },
-        id: idKey,
-        visible: true,
-        animation: google.maps.Animation.DROP,
-        icon: new google.maps.MarkerImage(
-                getCustomMarkerSymbol(statusValueId),
-                null, // size
-                null, // origin
-                new google.maps.Point( 15, 15 ), // anchor (move to center of marker)
-                new google.maps.Size( 60, 60 ) // scaled size (required for Retina display icon)
-                )
-    });
-    return googleMarker;
-};
-
 $scope.distanceLoc = [];
 var tempCount = 9999999999999999999999999;
         var eventPromise = VenVast.GetAllEvents()
@@ -435,6 +414,108 @@ $scope.clickInfoWindow($scope.eventIdforSearch);
  .controller('EventDetailCtrl', function($scope, $ionicLoading, $compile, $ionicModal, $stateParams, $http, $filter) {
 
 $scope.EventId = $stateParams.eventId;
+
+
+
+
+
+  $ionicModal.fromTemplateUrl('app/home/catagory.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+
+
+
+$scope.openCalender = function () {
+  var ipObj1 = {
+      callback: function (val) {  //Mandatory
+        console.log('Return value from the datepicker popup is : ' + val, new Date(val));
+         $scope.selectedDate = $filter('date')(new Date(val), 'MMM dd yyyy');
+      },
+      disabledDates: [            //Optional
+        new Date(2016, 2, 16),
+        new Date(2015, 3, 16),
+        new Date(2015, 4, 16),
+        new Date(2015, 5, 16),
+        new Date('Wednesday, August 12, 2015'),
+        new Date("08-16-2016"),
+        new Date(1439676000000)
+      ],
+      from: new Date(2012, 1, 1), //Optional
+      to: new Date(2016, 10, 30), //Optional
+      inputDate: new Date(),      //Optional
+      mondayFirst: true,          //Optional
+      disableWeekdays: [0],       //Optional
+      closeOnSelect: false,       //Optional
+      templateType: 'popup'       //Optional
+    };
+
+  
+      ionicDatePicker.openDatePicker(ipObj1);
+
+}
+
+$scope.groups = [];
+  
+  $scope.groups = [
+    { name: 'RESTRAUNTS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }]},
+    { name: 'LIFESTYLE', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }]},
+    { name: 'CLUBS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }]},
+    { name: 'NETWORKING', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }]},
+    { name: 'OTHER', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }]},
+    { name: 'VENVAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }]},
+    { name: 'SUPERFAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }]},
+  ];
+
+  $scope.gotoSubCategory = function(){
+$scope.modalCatagory.hide();
+    $state.go('subCategory');
+
+  }
+  
+
+  //Accordion Event Detail
+
+  $scope.toggleGroup = function(group) {
+    // alert(group);
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  };
+
+
+
+
+    $ionicLoading.show({
+      template: '<ion-spinner></ion-spinner><p>Loading nearest events</p>'
+    });
+    $http.get("http://venvast.com/category")
+    .then(function(response) {
+        $scope.categoryList = response.data;
+    });
+
+
+
+
+    $scope.modalCatagory= modal;
+
+
+
+
+
+
+
+  });
+
+$scope.gotoCategoryModal = function () {
+$scope.modalCatagory.show();
+}
+
 
 
     $ionicLoading.show({
@@ -631,7 +712,7 @@ $scope.calendarScreenModal.show();
 
         $scope.gotoSubCategory = function () {
             $scope.modalCatagory.hide();
-            $state.go('home.subCategory');
+            $state.go('subCategory');
         }
 
         //Accordion Event Detail
@@ -671,11 +752,11 @@ $scope.calendarScreenModal.show();
         $cordovaGeolocation
             .getCurrentPosition(posOptions)
             .then(function (position) {
-                var myLatlng = new google.maps.LatLng(13.7207510, 100.5859120);
+                var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
                 // position.coords.latitude, position.coords.longitude
 // 13.7207510, 100.5859120
-$scope.latit = 13.7207510;
-$scope.longit = 100.5859120;
+$scope.latit = position.coords.latitude;
+$scope.longit = position.coords.longitude;
         var mapOptions = {
           center: myLatlng,
           zoom: 15,
@@ -711,6 +792,8 @@ $scope.longit = 100.5859120;
             }, function (err) {
                 console.log('failed');
             });
+$scope.distanceLoc = [];
+var tempCount = 99999999999999999999999999;
         var eventPromise = VenVast.GetAllVenues()
         eventPromise.then(function (result) {
             result.forEach(function (element, index, array) {

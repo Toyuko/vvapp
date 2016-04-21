@@ -1,0 +1,152 @@
+<ion-view hide-back-button="true" >
+<img class="mainHeadImg" src="img/TodayLIVE.png">
+    <ion-content class="has-header background">
+
+
+       <ion-list class="subCat-list">
+
+
+          <ion-item class="subCat-li" ng-repeat= "item in EventsData">
+          <a  href="#/home/eventDetail/{{item.id}}">
+          
+          <img src="{{item.picture}}">
+
+
+          <div class="li-head">
+          	Organiser
+          </div> 
+          <div class="li-content">
+          	<!-- EVENT TITTLE -->
+               {{item.title}}
+          	<p>{{item.start_date}}</p>
+               
+          </div>
+          <div class="li-foot">
+          	Distance
+          	<p>Distance</p>
+          </div>
+
+          </a>
+          </ion-item>
+
+<!--           <ion-item class="subCat-li">
+          <a  href="#/home/eventDetail">
+          <div class="li-head">
+          	Organiser
+          </div>
+          <div class="li-content" >
+          	EVENT TITTLE
+          	<p>STARTS IN</p>
+          </div>
+          <div class="li-foot">
+          	Distance
+          	<p>Distance</p>
+          </div>
+</a>
+          </ion-item>
+
+          <ion-item class="subCat-li">
+          <a  href="#/home/eventDetail">
+
+          <div class="li-head">
+          	Organiser
+          </div>
+          <div class="li-content">
+          	EVENT TITTLE
+          	<p>STARTS IN</p>
+          </div>
+          <div class="li-foot">
+          	Distance
+          	<p>Distance</p>
+          </div>
+</a>
+          </ion-item>
+
+          <ion-item class="subCat-li">
+          <a  href="#/home/eventDetail">
+
+          <div class="li-head">
+               Organiser
+          </div>
+          <div class="li-content">
+               EVENT TITTLE
+               <p>STARTS IN</p>
+          </div>
+          <div class="li-foot">
+               Distance
+               <p>Distance</p>
+          </div>
+</a>
+          </ion-item>
+
+                    <ion-item class="subCat-li">
+          <a  href="#/home/eventDetail">
+
+          <div class="li-head">
+               Organiser
+          </div>
+          <div class="li-content">
+               EVENT TITTLE
+               <p>STARTS IN</p>
+          </div>
+          <div class="li-foot">
+               Distance
+               <p>Distance</p>
+          </div>
+</a>
+          </ion-item>
+
+                    <ion-item class="subCat-li">
+          <a  href="#/home/eventDetail">
+
+          <div class="li-head">
+               Organiser
+          </div>
+          <div class="li-content">
+               EVENT TITTLE
+               <p>STARTS IN</p>
+          </div>
+          <div class="li-foot">
+               Distance
+               <p>Distance</p>
+          </div>
+</a>
+          </ion-item>
+
+                    <ion-item class="subCat-li">
+          <a  href="#/home/eventDetail">
+
+          <div class="li-head">
+               Organiser
+          </div>
+          <div class="li-content">
+               EVENT TITTLE
+               <p>STARTS IN</p>
+          </div>
+          <div class="li-foot">
+               Distance
+               <p>Distance</p>
+          </div>
+</a>
+          </ion-item>
+
+                    <ion-item class="subCat-li">
+          <a  href="#/home/eventDetail">
+
+          <div class="li-head">
+               Organiser
+          </div>
+          <div class="li-content">
+               EVENT TITTLE
+               <p>STARTS IN</p>
+          </div>
+          <div class="li-foot">
+               Distance
+               <p>Distance</p>
+          </div>
+</a>
+          </ion-item>
+      </ion-list> -->
+
+    </ion-content>
+</ion-view>

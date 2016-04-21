@@ -16,7 +16,7 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-    <name>ionic-blankapp</name>
+    <name>Venvast</name>
     <description>
         An Ionic Framework and Cordova project.
     </description>
@@ -25,6 +25,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <allow-navigation href="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />

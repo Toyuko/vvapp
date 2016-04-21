@@ -1,5 +1,12 @@
 <ion-view hide-back-button="true" >
     <ion-content class="has-header background">
+   
+
+   <div class="item range range-cat">
+  <i class="">1 KM</i>
+  <input type="range" name="volume">
+  <i class="">5 KM</i>
+</div>
 
 
        <ion-list class="subCat-list">
@@ -8,16 +15,15 @@
           <ion-item class="subCat-li" ng-repeat= "item in EventsData">
           <a  href="#/home/eventDetail/{{item.id}}">
           
-          <img src="{{item.picture}}">
+          <img src="img/subCat-li.png">
 
 
           <div class="li-head">
           	Organiser
           </div> 
           <div class="li-content">
-          	<!-- EVENT TITTLE -->
-               {{item.title}}
-          	<p>{{item.start_date}}</p>
+               EVENT TITTLE
+          	<p>STARTS IN</p>
                
           </div>
           <div class="li-foot">
@@ -28,8 +34,34 @@
           </a>
           </ion-item>
 
+
+<!--                     <ion-item class="subCat-li" ng-repeat= "item in EventsData">
+          <a  href="#/home/eventDetail/{{item.id}}">
+          
+          <img src="{{item.picture}}">
+
+
+          <div class="li-head">
+               Organiser
+          </div> 
+          <div class="li-content">
+               {{item.title}}
+               <p>{{item.start_date}}</p>
+               
+          </div>
+          <div class="li-foot">
+               Distance
+               <p>Distance</p>
+          </div>
+
+          </a>
+          </ion-item> -->
+
+
+
 <!--           <ion-item class="subCat-li">
           <a  href="#/home/eventDetail">
+          <img src="img/subCat-li.png">
           <div class="li-head">
           	Organiser
           </div>
@@ -42,9 +74,9 @@
           	<p>Distance</p>
           </div>
 </a>
-          </ion-item>
+          </ion-item> -->
 
-          <ion-item class="subCat-li">
+  <!--         <ion-item class="subCat-li">
           <a  href="#/home/eventDetail">
 
           <div class="li-head">
@@ -144,8 +176,8 @@
                <p>Distance</p>
           </div>
 </a>
-          </ion-item>
-      </ion-list> -->
+          </ion-item> -->
+      </ion-list>
 
     </ion-content>
 </ion-view>
