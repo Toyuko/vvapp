@@ -180,9 +180,9 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
                 // console.log($scope.distanceLoc[i]);
                 if (tempCount > $scope.distanceLoc[index]) {
-                    tempCount = $scope.distanceLoc[index]
+                    tempCount = $scope.distanceLoc[index];
                     $scope.nearestEventId = element.id;
-                };
+                }
 
 
                 var infowindow = new google.maps.InfoWindow({
@@ -216,7 +216,7 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
                     $scope.eventIdforSearch = num;
                     // alert($scope.eventId);
-                    var specificEvent = VenVast.GetSpecificEvent($scope.eventIdforSearch)
+                    var specificEvent = VenVast.GetSpecificEvent($scope.eventIdforSearch);
                     specificEvent.then(function(result) {
 
                         $scope.eventTitle = result.title;
@@ -247,40 +247,40 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
 
 
-                    })
+                    });
 
 
                 };
 
 
 
-            })
+            });
 
             // console.log($scope.nearestEventId);
 
             // console.log($scope.distanceLoc);
             $scope.clickInfoWindow($scope.eventIdforSearch);
 
-        })
-    }
+        });
+    };
 
-                            $scope.toggleEvent = function(group) {
-                                if ($scope.isGroupShown(group)) {
-                                    $scope.shownGroup = null;
-                                } else {
-                                    $scope.shownGroup = group;
-                                }
-                            };
-                            $scope.isGroupShown = function(group) {
-                                return $scope.shownGroup === group;
-                            };
+    $scope.toggleEvent = function(group) {
+        if ($scope.isGroupShown(group)) {
+            $scope.shownGroup = null;
+        } else {
+            $scope.shownGroup = group;
+        }
+    };
+    $scope.isGroupShown = function(group) {
+        return $scope.shownGroup === group;
+    };
 
-                                                    $scope.showEventMainModal = function() {
-                            $scope.modalMainEvent.show();
-                        };
-                        $scope.closeModal = function(num) {
-                            $scope.modalMainEvent.hide();
-                        };
+    $scope.showEventMainModal = function() {
+        $scope.modalMainEvent.show();
+    };
+    $scope.closeModal = function(num) {
+        $scope.modalMainEvent.hide();
+    };
 
 
     $timeout(function() {
