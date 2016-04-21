@@ -1,6 +1,6 @@
 <ion-view hide-back-button="true" >
 <img class="mainHeadImg" src="img/TodayLIVE.png">
-    <ion-content class="has-header background">
+    <ion-content class="has-header background" overflow-scroll="true">
    
 
    <div class="item range range-cat">
@@ -16,7 +16,7 @@
           <ion-item class="subCat-li" ng-repeat= "item in EventsData">
           <a  href="#/home/eventDetail/{{item.id}}">
           
- <img src="{{item.picture}}"> 
+<div class="overlay"><img src="{{item.picture}}"> </div>
 
          <!-- <img src="img/subCat-li.png">
 

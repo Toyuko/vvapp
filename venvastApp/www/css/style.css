@@ -1325,11 +1325,8 @@ margin-top: -8px;
   font-size: 13px;
 }
 
-  .Layer-banner{
-    width: 100%;
-    background-color: #203138;
-    height: 30px;
-    background: rgba(32, 49, 56, 0.75);
-    margin-top: -40px;
-    position: absolute;
+
+.overlay {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+opacity: .6;
 }
