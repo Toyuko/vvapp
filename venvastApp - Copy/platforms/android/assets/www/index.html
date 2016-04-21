@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<meta http-equiv="Content-Security-Policy"
+          content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://rawgit.com/yuripetusko/ionic-ion-drawer/master/ionic.contrib.drawer.js
+                           ;
+               style-src  'self' 'unsafe-inline'
+                          127.0.0.1
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://rawgit.com/yuripetusko/ionic-ion-drawer/master/ionic.contrib.drawer.css
+
+">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <script src="js/platformOverrides.js"></script>
+    <!-- // <script src="js/slidingTabsDirective.js"></script> -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+<!-- Google Map Link -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es"></script>
+        <!-- // <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer></script> -->
+
+    <link href="css/style.css" rel="stylesheet">
+
+<!-- date picker -->
+<!-- <script src="lib/ionic-datepicker/ionic-datepicker.bundle.min.js"></script> -->
+
+    <!-- your app's js -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/moment/moment.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/home/controller.js"></script>
+    <script src="app/services/services.js"></script>
+
+  </head>
+  <body ng-app="starter" class="b">
+      <ion-side-menus>
+
+          <ion-side-menu-content ng-controller="NavCtrl">
+              <ion-nav-bar class="bar-dark">
+                  <ion-nav-back-button class="button-icon ion-arrow-left-c">
+                  </ion-nav-back-button>
+
+                  <ion-nav-buttons side="left">
+                      <button class="button button-icon button-clear ion-navicon" ng-click="showMenu()"></button>
+                  </ion-nav-buttons>
+
+              </ion-nav-bar>
+              <ion-nav-view animation="slide-left-right"></ion-nav-view>
+          </ion-side-menu-content>
+
+          <ion-side-menu side="left">
+              <ion-header-bar class="bar bar-header bar-dark">
+                  <h1 class="title">MENU</h1>
+              </ion-header-bar>
+              <ion-content has-header="true">
+                  <ul class="list">
+                      <li>
+                          <a class="item" menu-close="" nav-clear="" href="#/tab/home">Home</a>
+                      </li>
+                      <li>
+                          <a class="item" menu-close="" href="#/tab/facts">Profile</a>
+                      </li>
+                      <li>
+                          <a class="item" menu-close="" href="#/tab/facts2">Settings</a>
+                      </li>
+                  </ul>
+              </ion-content>
+          </ion-side-menu>
+        </ion-side-menus>
+
+
+            <!-- Select Interest Page -->
+<!--     <ion-pane id="pg-select-interest">
+        <ion-header-bar class="top-bar bar-dark has-tabs-top">
+          <button menu-toggle="left" class="ven-nav-btn button button-icon icon ion-navicon"></button>
+          <h1 class="title"><img src="img/TodayLive.png" class="today-live" /></h1>
+
+          <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+            <div class="tabs">
+              <a class="tab-item" href="#">
+                Deals
+              </a>
+              <a class="tab-item active" href="#">
+                Events
+              </a>
+              <a class="tab-item" href="#">
+                Venues
+              </a>
+            </div>
+          </div>
+        </ion-header-bar>
+
+    </ion-pane>
+ -->
+
+    <!-- Main Page -->
+<!--     <ion-pane>
+     <ion-side-menus>
+          <ion-side-menu side="left"></ion-side-menu>
+          <ion-side-menu-content>
+
+              <ion-header-bar class="top-bar bar-dark has-tabs-top">
+                <button menu-toggle="left" class="ven-nav-btn button button-icon icon ion-navicon"></button>
+                <h1 class="title"><img src="img/TodayLive.png" class="today-live" /></h1>
+                <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+                  <div class="tabs">
+                    <a class="tab-item" href="#">
+                      Deals
+                    </a>
+                    <a class="tab-item active" href="#">
+                      Events
+                    </a>
+                    <a class="tab-item" href="#">
+                      Venues
+                    </a>
+                  </div>
+                </div>
+              </ion-header-bar>
+
+
+              <ion-content scroll="false">
+                <button class="interest-btn" on-click="toggleInterest();">Select Interest<i class="pull-right ion ion-chevron-down"></i></button>
+                 <div id="map" data-tap-disabled="true"></div>
+              </ion-content>
+
+          </ion-side-menu-content>       
+      </ion-side-menus>
+    </ion-pane> -->
+
+  </body>
+</html>

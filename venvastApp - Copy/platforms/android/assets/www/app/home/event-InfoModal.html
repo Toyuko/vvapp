@@ -1,0 +1,114 @@
+<ion-modal-view cache-view="false">
+              <ion-nav-bar class="bar-dark">
+
+                  <ion-nav-buttons side="left" class="modal-title">
+                      <button class="button button-icon button-clear icon ion-close-round" ng-click="closeModal(2)"></button>
+                  </ion-nav-buttons>
+
+    <ion-nav-title>
+         {{VenueTitle}}
+    </ion-nav-title>
+              <ion-nav-buttons side="right">
+                      <button class="button button-icon button-clear ion-ios-information-outline"></button>
+                  </ion-nav-buttons>
+              </ion-nav-bar>
+    <ion-content class="has-header; background">
+
+    <div class="bar top-event">
+  <div class="title eve-top-tit">{{eventTitle}}</div>
+</div>
+
+
+<div class="description-modal">
+
+	<div> <i class = "icon icon ion-ios-information-outline"></i> DESCRIPTION <p>ENG</p></div>
+
+<div class="des-des">
+    {{eventDescription}}
+</div>
+
+</div>
+
+
+<div class="open-modal">
+<!-- ion-ios-clock-outline -->
+  <div> <i class = "icon icon  ion-android-calendar"></i> DATE <p>{{eventStartDate}}</p></div>
+
+<div class="open-des">
+Starting in {{ eventStartTime | date : 'HH:mm'}} h
+</div>
+
+
+  <div class="event-open-des"> <i class = "icon icon  ion-ios-clock-outline"></i> TIME <p>From 20:00pm</p></div>
+
+<div class="open-des open-des-event">
+To 2:00am
+</div>
+
+</div>
+
+<div class="open-modal">
+
+	<div> <i class = "icon icon ion-ios-clock-outline"></i> DEALS <p>Starts in 3:00 h</p> <p class="eve-p2">Ends in 4:00 h</p></div>
+
+<div class="open-des">
+During first hour ladies can consume as much cheap alcohol as they want
+</div>
+
+</div>
+
+
+<div class="open-modal location-modal">
+
+	<div> <i class = "icon icon ion-ios-location-outline"></i> OPENING HOURS <p>Sukhumvit 11, Rama 4</p></div>
+
+
+</div>
+
+
+
+<div class="open-modal location-modal" ng-click="toggleEvent(group)" ng-class="{active: isGroupShown(group)}">
+
+  <div > <i class = "icon icon ion-ios-location-outline"></i> ATTENDEES <p>300, 2 friends</p> 
+    <button  class="button button-clear ion-ios-arrow-down icon-right-eve"></button>
+    </div>
+
+
+</div>
+<!-- <div class="item-accordion item item-trns"
+                    ng-repeat="item in group.items"
+                    ng-show="isGroupShown(group)">
+salmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalman
+salmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalman
+salmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalman
+
+</div> -->
+
+
+<div class="open-modal location-modal">
+
+  <div> <i class = "icon icon ion-ios-location-outline"></i> BOOKING / TABLE RESERVATIONS 
+    <button class="button button-clear ion-ios-arrow-down noti-icon icon-right-eve"></button>
+
+  </div>
+
+</div>
+
+<div class="open-modal location-modal">
+
+  <div> <i class = "icon icon ion-ios-location-outline"></i> NOTIFICATIONS<p>Add Notifications</p> 
+    <button class="button button-clear ion-plus-round  icon-right-eve"></button>
+
+  </div>
+
+
+</div>
+
+   <div class="bar bar-footer foot-event foot-event-dir" >
+    <button class="button button-clear ion-ios-paperplane-outline foot-icon"></button>
+
+  <div class="title eve-foot-tit">GET DIRECTION</div>
+</div>
+
+    </ion-content>
+  </ion-modal-view>
