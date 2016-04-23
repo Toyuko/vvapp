@@ -4035,7 +4035,7 @@ a.subdued {
     color: inherit; }
   .bar .button, .bar button {
     z-index: 1;
-    padding: 0 8px;
+    padding: 0 15px;
     min-width: initial;
     min-height: 31px;
     font-weight: 400;
@@ -4056,7 +4056,8 @@ a.subdued {
         line-height: 32px; }
     .bar .button.button-clear, .bar button.button-clear {
       padding-right: 2px;
-      padding-left: 2px;
+      padding-left: 10px;
+      padding-top: 7px;
       font-weight: 300;
       font-size: 17px; }
       .bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before, .bar button.button-clear .icon:before, .bar button.button-clear.icon:before, .bar button.button-clear.icon-left:before, .bar button.button-clear.icon-right:before {
@@ -4293,7 +4294,7 @@ a.subdued {
   background-image: none; }
 
 .bar-footer {
-  bottom: 0;
+  bottom: -11px;
   border-top-width: 1px;
   border-bottom-width: 0;
   background-position: top;
@@ -4481,6 +4482,7 @@ a.subdued {
 .tabs-striped .tabs {
   background-color: white;
   background-image: none;
+  opacity: 50%;
   border: none;
   border-bottom: 1px solid #ddd;
   padding-top: 2px; }
@@ -4700,7 +4702,7 @@ a.subdued {
   .tabs-striped.tabs-color-light .tab-item.tab-item-active, .tabs-striped.tabs-color-light .tab-item.active, .tabs-striped.tabs-color-light .tab-item.activated {
     margin-top: -2px;
     color: #fff;
-    border: 0 solid #fff;
+    border: 0 solid rgba(255,255,255,0.50)
     border-top-width: 2px; }
     .tabs-striped.tabs-color-light .tab-item.tab-item-active .badge, .tabs-striped.tabs-color-light .tab-item.active .badge, .tabs-striped.tabs-color-light .tab-item.activated .badge {
       top: 2px;
@@ -4879,7 +4881,7 @@ a.subdued {
     opacity: 0.4; }
   .tabs-color-light .tab-item.tab-item-active, .tabs-color-light .tab-item.active, .tabs-color-light .tab-item.activated {
     color: #fff;
-    border: 0 solid #fff; }
+    border: 0 solid rgba(255,255,255,0.50); }
     .tabs-color-light .tab-item.tab-item-active .badge, .tabs-color-light .tab-item.active .badge, .tabs-color-light .tab-item.activated .badge {
       opacity: 1; }
 
@@ -5027,7 +5029,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
     transition: color .1s ease; }
     .tabs-top.tabs-striped .tab-item.tab-item-active, .tabs-top.tabs-striped .tab-item.active, .tabs-top.tabs-striped .tab-item.activated {
       margin-top: 1px;
-      border-width: 0px 0px 2px 0px !important;
+      border-width: 0px 0px 4px 0px !important;
       border-style: solid; }
       .tabs-top.tabs-striped .tab-item.tab-item-active > .badge, .tabs-top.tabs-striped .tab-item.tab-item-active > i, .tabs-top.tabs-striped .tab-item.active > .badge, .tabs-top.tabs-striped .tab-item.active > i, .tabs-top.tabs-striped .tab-item.activated > .badge, .tabs-top.tabs-striped .tab-item.activated > i {
         margin-top: -1px; }
@@ -5049,8 +5051,8 @@ ion-tabs.tabs-color-active-dark .tab-item {
 /* If you change this, change platform.scss as well */
 .tabs-top > .tabs,
 .tabs.tabs-top {
-  top: 44px;
-  padding-top: 0;
+  top: 35px;
+  padding-top: 1px;
   background-position: bottom;
   border-top-width: 0;
   border-bottom-width: 1px; }
@@ -5080,7 +5082,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
   opacity: 0.7; }
   .tab-item:hover {
@@ -5330,7 +5332,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
   .platform-ios.platform-cordova .modal-wrapper .modal .has-subheader {
     top: 88px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-tabs-top {
-    top: 93px; }
+    t: 76px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-subheader.has-tabs-top {
     top: 137px; }
   .modal-backdrop-bg {
@@ -8537,7 +8539,7 @@ progress {
   margin: 0;
   padding: 0 12px;
   min-width: 52px;
-  min-height: 47px;
+  min-height: 55px;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
