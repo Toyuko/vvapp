@@ -3348,9 +3348,9 @@ body,
   padding: 0;
   color: #000;
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 10px;
   font-family: -apple-system;
-  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  font-family: "-apple-system", "Helvetica Neue", "Avenir-Light" , "Roboto", "Segoe UI", sans-serif;
   line-height: 20px;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
@@ -4013,9 +4013,9 @@ a.subdued {
   .bar .title {
     display: block;
     position: absolute;
-    top: 0;
+    top: -4px;
     right: 0;
-    left: 0;
+    left: 18px;
     z-index: 0;
     overflow: hidden;
     margin: 0 10px;
@@ -5083,7 +5083,8 @@ ion-tabs.tabs-color-active-dark .tab-item {
   white-space: nowrap;
   font-weight: 400;
   font-size: 12px;
-  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  letter-spacing: 1px; 
+  font-family: "-apple-system", "Avenir-Light", "Roboto", "Segoe UI", sans-serif;
   opacity: 0.7; }
   .tab-item:hover {
     cursor: pointer; }

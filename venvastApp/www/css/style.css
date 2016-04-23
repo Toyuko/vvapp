@@ -10,14 +10,14 @@
 
 }
 @font-face {
-  font-family: "Avenir";
-  src: url("../lib/fonts/Avenir-Light.ttf") format("opentype");
+  font-family: 'Avenir-Light';
+  src: url('../lib/fonts/Avenir-Light.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-Light.woff') format('woff'), url('../lib/fonts/Avenir-Light.ttf')  format('truetype'), url('../lib/fonts/Avenir-Light.svg#Avenir-Light') format('svg');
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
 }
 
 body{
-    font-family: 'Avenir-Book','Avenir-Heavy', 'Avenir-Light' , 'Avenir-Light' !important;
+    font-family: 'Avenir-Book','Avenir-Heavy','Avenir-Light', !important;
 }
 
 
@@ -318,10 +318,10 @@ float: right;
  width: 100% ; 
 }
 .event-cont-foot p{
-margin-top: 15px;
-    margin-left: 10px;
+margin-top: 22px;
+    margin-left: 23px;
     color: #fff;
-    font-size: 16px;
+    font-size: 17px;
 } 
 
 .event-cont-foot .p2{
@@ -1235,12 +1235,12 @@ max-height: 100%  !important;
 
 .foot-venumap .p2{
 
-    margin-top: 15px !important;
+    margin-top: 22px !important;
     /* float: right !important; */
     /* color: #fff !important; */
     /* margin-right: 10px !important; */
     font-size: 12px !important;
-    margin-left: 50%;
+    margin-left: 143px;
   }
 
 .mainHeadImg{
