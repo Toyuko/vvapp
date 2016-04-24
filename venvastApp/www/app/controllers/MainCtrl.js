@@ -67,7 +67,7 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
     $ionicModal.fromTemplateUrl('app/home/catagory.html', {
         scope: $scope,
-        animation: 'slide-in-up'
+        animation: 'slide-in-down'
     }).then(function(modal) {
 
 

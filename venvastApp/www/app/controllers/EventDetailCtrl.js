@@ -4,7 +4,7 @@ app.controller('EventDetailCtrl', function($scope, $ionicLoading, $compile, $ion
 
     $ionicModal.fromTemplateUrl('app/home/catagory.html', {
         scope: $scope,
-        animation: 'slide-in-up'
+        animation: 'slide-in-down'
     }).then(function(modal) {
 
 
