@@ -2,14 +2,17 @@
               <ion-nav-bar class="bar-dark">
 
                   <ion-nav-buttons side="left" class="modal-title">
-                      <button class="button button-icon button-clear icon ion-close-round" ng-click="closeModal(2)"></button>
+                      <!-- <button class="button button-icon button-clear icon ion-close-round" ng-click="closeModal(2)"></button> -->
+                     <button class="button button-icon button-clear icon" ng-click="closeModal(2)"><img class="xbtncat" src="img/icons/close.png"></button>
                   </ion-nav-buttons>
 
     <ion-nav-title>
          {{VenueTitle}}
     </ion-nav-title>
               <ion-nav-buttons side="right">
-                      <button class="button button-icon button-clear ion-ios-information-outline"></button>
+                      <!-- <button class="button button-icon button-clear ion-ios-information-outline"></button> -->
+             <button class="button button-icon button-clear"><img class="ibtncat" src="img/icons/Booking-Icon.png"></button>
+
                   </ion-nav-buttons>
               </ion-nav-bar>
     <ion-content class="has-header; background">
@@ -21,7 +24,9 @@
 
 <div class="description-modal">
 
-	<div> <i class = "icon icon ion-ios-information-outline"></i> DESCRIPTION <p>ENG</p></div>
+	<!-- <div> <i class = "icon icon ion-ios-information-outline"></i> DESCRIPTION <p>ENG</p></div> -->
+  <div> <i class = "icon icon"><img class="ibtncatsml" src="img/icons/Booking-Icon.png"></i> DESCRIPTION <p>ENG</p></div>
+
 
 <div class="des-des">
     {{eventDescription}}
@@ -32,14 +37,17 @@
 
 <div class="open-modal">
 <!-- ion-ios-clock-outline -->
-  <div> <i class = "icon icon  ion-android-calendar"></i> DATE <p>{{eventStartDate}}</p></div>
+  <!-- <div> <i class = "icon icon  ion-android-calendar"></i> DATE <p>{{eventStartDate}}</p></div> -->
+  <div> <i class = "icon icon "><img class="ibtncatsml" src="img/icons/calendar.png"></i> DATE <p>{{eventStartDate}}</p></div>
+
 
 <div class="open-des">
 Starting in {{ eventStartTime | date : 'HH:mm'}} h
 </div>
 
 
-  <div class="event-open-des"> <i class = "icon icon  ion-ios-clock-outline"></i> TIME <p>From 20:00pm</p></div>
+  <!-- <div class="event-open-des"> <i class = "icon icon  ion-ios-clock-outline"></i> TIME <p>From 20:00pm</p></div> -->
+    <div class="event-open-des"> <i class = "icon icon"><img class="ibtncatsml" src="img/icons/Time-Icon.png"></i> TIME <p>From 20:00pm</p></div>
 
 <div class="open-des open-des-event">
 To 2:00am
@@ -49,8 +57,9 @@ To 2:00am
 
 <div class="open-modal">
 
-	<div> <i class = "icon icon ion-ios-clock-outline"></i> DEALS <p>Starts in 3:00 h</p> <p class="eve-p2">Ends in 4:00 h</p></div>
+	<!-- <div> <i class = "icon icon ion-ios-clock-outline"></i> DEALS <p>Starts in 3:00 h</p> <p class="eve-p2">Ends in 4:00 h</p></div> -->
 
+  <div> <i class = "icon icon"><img class="ibtncatsml" src="img/icons/Time-Icon.png"></i> DEALS <p>Starts in 3:00 h</p> <p class="eve-p2">Ends in 4:00 h</p></div>
 <div class="open-des">
 During first hour ladies can consume as much cheap alcohol as they want
 </div>
@@ -60,7 +69,7 @@ During first hour ladies can consume as much cheap alcohol as they want
 
 <div class="open-modal location-modal">
 
-	<div> <i class = "icon icon ion-ios-location-outline"></i> OPENING HOURS <p>Sukhumvit 11, Rama 4</p></div>
+	<div> <i class = "icon icon"><img class="ibtncatsml" src="img/icons/Location-Icon.png"></i> OPENING HOURS <p>Sukhumvit 11, Rama 4</p></div>
 
 
 </div>
@@ -69,7 +78,7 @@ During first hour ladies can consume as much cheap alcohol as they want
 
 <div class="open-modal location-modal" ng-click="toggleEvent(group)" ng-class="{active: isGroupShown(group)}">
 
-  <div > <i class = "icon icon ion-ios-location-outline"></i> ATTENDEES <p>300, 2 friends</p> 
+  <div > <i class = "icon icon"><img class="ibtncatsml" src="img/icons/Attendee-Icon.png"></i> ATTENDEES <p>300, 2 friends</p> 
     <button  class="button button-clear ion-ios-arrow-down icon-right-eve"></button>
     </div>
 
@@ -87,8 +96,8 @@ salmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalman
 
 <div class="open-modal location-modal">
 
-  <div> <i class = "icon icon ion-ios-location-outline"></i> BOOKING / TABLE RESERVATIONS 
-    <button class="button button-clear ion-ios-arrow-down noti-icon icon-right-eve"></button>
+  <div> <i class = "icon icon "><img class="ibtncatsml" src="img/icons/Booking-Icon.png"></i> BOOKING / TABLE RESERVATIONS 
+    <button class="button button-clear ion-ios-arrow-down noti-icon icon-right-eve icon-eve-down"></button>
 
   </div>
 
@@ -96,16 +105,15 @@ salmansalmansalmansalmansalmansalmansalmansalmansalmansalmansalman
 
 <div class="open-modal location-modal">
 
-  <div> <i class = "icon icon ion-ios-location-outline"></i> NOTIFICATIONS<p>Add Notifications</p> 
-    <button class="button button-clear ion-plus-round  icon-right-eve"></button>
-
+  <div> <i class= "icon icon"><img class="ibtncatsml" src="img/icons/Notification-icon.png"></i> NOTIFICATIONS<p>Add Notifications</p> 
+    <button class="button button-clear icon-right-eve "><img class="ibtncatsml" src="img/icons/Add-Icon.png"></button>
   </div>
 
 
 </div>
 
    <div class="bar bar-footer foot-event foot-event-dir" >
-    <button class="button button-clear ion-ios-paperplane-outline foot-icon"></button>
+    <button class="button button-clear foot-icon"><img class="ibtncatsml" src="img/icons/Navigate-icon.png"></button>
 
   <div class="title eve-foot-tit">GET DIRECTION</div>
 </div>
