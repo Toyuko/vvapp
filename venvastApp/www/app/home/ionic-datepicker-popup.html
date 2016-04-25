@@ -1,12 +1,13 @@
-   <a class="button button-icon icon ion-close-round icon-cal-x cat-icon button_close " ng-click="closeIonicDatePickerModal()"  nav-transition="android"></a>   
+   <a class="button button-icon icon  cat-icon" ng-click="closeCalendar()" nav-transition="android"><img class="xbtncat" src="img/icons/close.png"></a>
+   <!--<a class="button button-icon icon ion-close-round icon-cal-x cat-icon button_close " ng-click="closeIonicDatePickerModal()"  nav-transition="android"></a> -->   
    <!-- <a class="button button-icon icon ion-calendar cat-icon cat-icon-right" ng-click="openCalender()"nav-transition="android"></a>   -->
 <!-- <h3 class="cat-h3">TODAY</h3>
 
 <div class="selected_date_full">{{selctedDateEpoch | date : mainObj.dateFormat}}</div>
  -->
 <div class="head-calen">
-<p class="p-h-calen">TODAY</p>
-<p class="p2-h-calen">{{selctedDateEpoch | date : mainObj.dateFormat}}</p>
+<div class="p-h-calen">TODAY</div>
+<div class="p2-h-calen">{{selctedDateEpoch | date : 'MMMM dd, yyyy' : mainObj.dateFormat}}</div>
 </div>
 
 <div class="low-head-calen">
@@ -26,7 +27,7 @@
 <p class="p-ch-calen">OR JUST PICK STARTING DATE</p>
 </div>
 
-
+<hr class="style-one">
 
 
 

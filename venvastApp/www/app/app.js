@@ -153,7 +153,7 @@ var app = angular.module('starter', ['ionic', 'ngCordova'])
       inputDate: new Date(),
       mondayFirst: true,
       weeksList: ["S", "M", "T", "W", "T", "F", "S"],
-      monthsList: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+      monthsList: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
       templateType: 'popup',
       showTodayButton: false,
       closeOnSelect: false,

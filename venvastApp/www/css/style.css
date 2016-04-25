@@ -537,7 +537,7 @@ float: right;
 .cat-h4{
       text-align: center !important;
        margin-top: -7px !important;  
-    margin-left: 30px !important;
+    margin-left: 68px !important;
     color: rgba(255,255,255,0.50) !important;
     font-family: Avenir-Book !important;
     letter-spacing: 2px !important;
@@ -583,15 +583,14 @@ hr.style-one {
 }
 
 .cat-h3 {
-    text-align: center;
-    margin-top: -30px;
-    margin-left: 30px;
+      text-align: center;
+    margin-top: -35px;
+    margin-left: 68px;
     color: #fff;
     font-family: avenir-book;
     font-size: 15px;
     letter-spacing: 5px;
-    font-weight: bold;
-}
+    }
 
 
 
@@ -611,7 +610,7 @@ hr.style-one {
 .p-h-calen{
 
  text-align: center;
-    margin-top: 34px;
+    margin-top: 13px;
     margin-left: 5px;
     color: #fff;
     font-family: avenir-light;
@@ -634,6 +633,7 @@ color: #DEDEE2;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: rgba(255,255,255,0.50) !important;
 }
 
 .low-head-calen{
@@ -649,21 +649,26 @@ color: #DEDEE2;
 
 .p-lh-calen{
 
-      color: #DEDEE2;
-    font-size: 16px;
-    margin-top: 28px;
-}
+  color: rgba(222,222,226,0.50);
+    font-size: 15px;
+    margin-top: 15px;
+    font-family: avenir-light;
+    letter-spacing: 5px;
+
+  }
 
 .p-l2h-calen{
-      color: #DEDEE2;
-    font-size: 16px;
-    margin-top: 28px;
+    color: rgba(222,222,226,0.50);
+    font-size: 15px;
+    margin-top: 15px;
+    font-family: avenir-light;
+    letter-spacing: 5px
 }
 
 .p-ch-calen{
     color: #DEDEE2;
     font-size: 12px;
-    margin-top: 48px;
+    margin-top: 44px;
     /*width: 50%;*/
 }
 
@@ -1428,10 +1433,19 @@ opacity: .6;
 
 .xbtncat{
 
-  width: 70%;
+     width: 70%;
     height: 100%;
     margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 
+.calbtncat{
+      width: 70%;
+    height: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 .ibtncat{
@@ -1455,3 +1469,19 @@ width: 19px;
 
 
   }
+
+  .menubtnmain{
+
+     width: 70%;
+    height: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.menubtnadown{
+ float: right;
+   width: 6%;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 30px;
+}

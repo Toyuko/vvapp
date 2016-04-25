@@ -1,5 +1,5 @@
 app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, ActiveEvent, $cordovaGeolocation, $http, $ionicModal, ionicDatePicker, $filter, $state, $timeout) {
-    $scope.selectedDate = $filter('date')(new Date(), 'MMM dd yyyy');
+    $scope.selectedDate = $filter('date')(new Date(), 'MMMM dd, yyyy');
 
 
     $scope.groups = [];
@@ -39,7 +39,7 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
         var ipObj1 = {
             callback: function(val) { //Mandatory
                 console.log('Return value from the datepicker popup is : ' + val, new Date(val));
-                $scope.selectedDate = $filter('date')(new Date(val), 'MMM dd yyyy');
+                $scope.selectedDate = $filter('date')(new Date(val), 'MMMM dd yyyy');
             },
             disabledDates: [ //Optional
                 new Date(2016, 2, 16),
