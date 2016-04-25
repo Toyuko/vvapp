@@ -8436,7 +8436,7 @@ input:checked + .checkbox-icon:after {
 .item-select {
   position: relative; }
   .item-select select {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     position: absolute;
@@ -8446,12 +8446,14 @@ input:checked + .checkbox-icon:after {
     padding: 0 48px 0 16px;
     max-width: 65%;
     border: none;
-    background: #fff;
-    color: #333;
+    background: ;
+    color: #fafafa;
     text-indent: .01px;
     text-overflow: '';
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: avenir-book;
+    letter-spacing: 1px;
     cursor: pointer;
     direction: rtl; }
   .item-select select::-ms-expand {
