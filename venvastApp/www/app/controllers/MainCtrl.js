@@ -16,9 +16,8 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
     $scope.gotoSubCategory = function() {
         $scope.modalCatagory.hide();
-        $state.go('subCategory');
-
-    }
+        $state.go('home.subcategory');
+    };
 
     //Accordion Event Detail
 

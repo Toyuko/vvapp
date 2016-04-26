@@ -44,8 +44,8 @@ app.controller('VenueCtrl', function($scope, $ionicLoading, $compile, $ionicModa
 
         $scope.gotoSubCategory = function() {
             $scope.modalCatagory.hide();
-            $state.go('subCategory');
-        }
+            $state.go('home.subcategory');
+        };
 
         //Accordion Event Detail
 

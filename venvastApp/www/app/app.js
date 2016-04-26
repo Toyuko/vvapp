@@ -89,16 +89,16 @@ var app = angular.module('starter', ['ionic', 'ngCordova'])
             }
         })
 
-        .state('subCategory', {
-            url: "/subCategory",
-            // views: {
-            //     "tab-events": {
-                    templateUrl: "app/home/subCategory.html",
-                  controller: "subCategoryCtrl"
-                    
-            //     }
-            // }
-        })
+      .state('home.subcategory', {
+        url: "/subcategory",
+        views: {
+          "tab-events": {
+            templateUrl: "app/home/subCategory.html",
+            controller: "subCategoryCtrl"
+
+          }
+        }
+      })
 
         .state('home.eventDetail', {
             url: "/eventDetail/:eventId",

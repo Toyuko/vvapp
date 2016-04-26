@@ -52,9 +52,8 @@ app.controller('EventDetailCtrl', function($scope, $ionicLoading, $compile, $ion
 
         $scope.gotoSubCategory = function() {
             $scope.modalCatagory.hide();
-            $state.go('subCategory');
-
-        }
+            $state.go('home.subcategory');
+        };
 
 
         //Accordion Event Detail
