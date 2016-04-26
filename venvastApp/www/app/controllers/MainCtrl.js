@@ -72,14 +72,14 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
 
 
-       // $ionicLoading.show({
-       //     template: '<ion-spinner></ion-spinner><p>Loading nearest events</p>'
-      // });
+       $ionicLoading.show({
+          template: '<ion-spinner></ion-spinner><p>Loading nearest events</p>'
+       });
 
-      //  $http.get("http://venvast.com/category")
-      //      .then(function(response) {
-       //         $scope.categoryList = response.data;
-      //      }); 
+        $http.get("http://venvast.com/category")
+            .then(function(response) {
+       $scope.categoryList = response.data;
+           }); 
 
 
         $scope.modalCatagory = modal;
