@@ -9,209 +9,211 @@
     font-weight: 200;
 
 }
-@font-face {
-  font-family: 'Avenir-Light';
-  src: url('../lib/fonts/Avenir-Light.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-Light.woff') format('woff'), url('../lib/fonts/Avenir-Light.ttf')  format('truetype'), url('../lib/fonts/Avenir-Light.svg#Avenir-Light') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 @font-face {
-  font-family: 'Avenir-LightOblique';
-  src: url('../lib/fonts/Avenir-LightOblique.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-LightOblique.woff') format('woff'), url('../lib/fonts/Avenir-LightOblique.ttf')  format('truetype'), url('../lib/fonts/Avenir-LightOblique.svg#Avenir-LightOblique') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Avenir-Light';
+    src: url('../lib/fonts/Avenir-Light.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/Avenir-Light.woff') format('woff'), url('../lib/fonts/Avenir-Light.ttf') format('truetype'), url('../lib/fonts/Avenir-Light.svg#Avenir-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Medium';
-  src: url('../lib/fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-Medium.woff') format('woff'), url('../lib/fonts/Avenir-Medium.ttf')  format('truetype'), url('../lib/fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Avenir-MediumOblique';
-  src: url('../lib/fonts/Avenir-MediumOblique.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-MediumOblique.woff') format('woff'), url('../lib/fonts/Avenir-MediumOblique.ttf')  format('truetype'), url('../lib/fonts/Avenir-MediumOblique.svg#Avenir-MediumOblique') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Avenir-LightOblique';
+    src: url('../lib/fonts/Avenir-LightOblique.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/Avenir-LightOblique.woff') format('woff'), url('../lib/fonts/Avenir-LightOblique.ttf') format('truetype'), url('../lib/fonts/Avenir-LightOblique.svg#Avenir-LightOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir-Oblique';
-  src: url('../lib/fonts/Avenir-Oblique.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-Oblique.woff') format('woff'), url('../lib/fonts/Avenir-Oblique.ttf')  format('truetype'), url('../lib/fonts/Avenir-Oblique.svg#Avenir-Oblique') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Avenir-Medium';
+    src: url('../lib/fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/Avenir-Medium.woff') format('woff'), url('../lib/fonts/Avenir-Medium.ttf') format('truetype'), url('../lib/fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'Avenir-Roman';
-  src: url('../lib/fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-Roman.woff') format('woff'), url('../lib/fonts/Avenir-Roman.ttf')  format('truetype'), url('../lib/fonts/Avenir-Roman.svg#Avenir-Roman') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Avenir-MediumOblique';
+    src: url('../lib/fonts/Avenir-MediumOblique.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/Avenir-MediumOblique.woff') format('woff'), url('../lib/fonts/Avenir-MediumOblique.ttf') format('truetype'), url('../lib/fonts/Avenir-MediumOblique.svg#Avenir-MediumOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'Avenir-Black';
-  src: url('../lib/fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),  url('../lib/fonts/Avenir-Black.woff') format('woff'), url('../lib/fonts/Avenir-Black.ttf')  format('truetype'), url('../lib/fonts/Avenir-Black.svg#Avenir-Black') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Avenir-Oblique';
+    src: url('../lib/fonts/Avenir-Oblique.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/Avenir-Oblique.woff') format('woff'), url('../lib/fonts/Avenir-Oblique.ttf') format('truetype'), url('../lib/fonts/Avenir-Oblique.svg#Avenir-Oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-
-body{
-    font-family: 'Avenir-Book','Avenir-Heavy','Avenir-Light','Avenir-LightOblique','Avenir-Medium','Avenir-MediumOblique','Avenir-Oblique','Avenir-Roman','Avenir-Black' !important;
+@font-face {
+    font-family: 'Avenir-Roman';
+    src: url('../lib/fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/Avenir-Roman.woff') format('woff'), url('../lib/fonts/Avenir-Roman.ttf') format('truetype'), url('../lib/fonts/Avenir-Roman.svg#Avenir-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('../lib/fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/Avenir-Black.woff') format('woff'), url('../lib/fonts/Avenir-Black.ttf') format('truetype'), url('../lib/fonts/Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Avenir-Book', 'Avenir-Heavy', 'Avenir-Light', 'Avenir-LightOblique', 'Avenir-Medium', 'Avenir-MediumOblique', 'Avenir-Oblique', 'Avenir-Roman', 'Avenir-Black' !important;
+}
 
 .b {
-  /*BG.png*/
+    /*BG.png*/
     background: url(../img/main_bkg.jpg);
 }
+
 .background {
-  /*BG.png*/
-    background: url(../img/main_bkg.jpg) no-repeat
-    center center fixed;
+    /*BG.png*/
+    background: url(../img/main_bkg.jpg) no-repeat center center fixed;
     -webkit- background-size: cover;
     -moz- background-size: cover;
     -o- background-size: cover;
     background-size: cover;
-   }
- ion-view {
-    background: url(../img/main_bkg.jpg)  no-repeat;
-  background-size: cover;
+}
+
+ion-view {
+    background: url(../img/main_bkg.jpg) no-repeat;
+    background-size: cover;
     -webkit- background-size: cover;
     -moz- background-size: cover;
     -o- background-size: cover;
     /*background-size: cover;*/
 
-   }
+}
 
 .bar {
     background-color: transparent !important;
 }
+
 .tab-nav.tabs {
     background-color: transparent !important;
     border: 0;
 }
+
 .item.item-trns {
-	border-color: rgba(0, 0, 0, 0);
-	background-color: rgba(0, 0, 0, 0);
-	color: white;
-  padding-bottom: 0px !important;
-      padding-top: 0px !important;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
 
 }
+
 .tabs-striped.tabs-background-trns .tabs {
-  background-color: rgba(0, 0, 0, 0) !important;
-  color: transparent !important;
-  }
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: transparent !important;
+}
 
 .enjoy-css {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  /*width: 100%;*/
-  padding: 10px;
-  overflow: hidden;
-  border: 0 solid rgba(255,255,255,1);
-  /*border-bottom: 1px solid rgba(255,255,255,0.21);*/
-  /*font: normal 18px/1 Arial, Helvetica, sans-serif;*/
-  color: rgba(255,255,255,1);
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  letter-spacing: 4px;
-  background: rgba(140,140,140,0);
-  text-shadow: 0px 0px 0px rgba(0,0,0,0.2) ;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    /*width: 100%;*/
+    padding: 10px;
+    overflow: hidden;
+    border: 0 solid rgba(255, 255, 255, 1);
+    /*border-bottom: 1px solid rgba(255,255,255,0.21);*/
+    /*font: normal 18px/1 Arial, Helvetica, sans-serif;*/
+    color: rgba(255, 255, 255, 1);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    letter-spacing: 4px;
+    background: rgba(140, 140, 140, 0);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
 
-      
 }
+
 .enjoy-css2 {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  border: none;
-  /*font: normal normal bold 20px/1 Arial, Helvetica, sans-serif;*/
-  color: rgba(255,255,255,1);
-  text-align: right;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  letter-spacing: 5px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    /*font: normal normal bold 20px/1 Arial, Helvetica, sans-serif;*/
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    letter-spacing: 5px;
 }
+
 .bar.bar-light {
-  background-color: transparent important; /* or transparent, or background:none */
+    background-color: transparent important; /* or transparent, or background:none */
 }
+
 .scroll-content {
-  overflow: visible !important;
+    overflow: visible !important;
 }
+
 .font {
-	  /*font: normal normal bold 20px/1 Arial, Helvetica, sans-serif;*/
-	  color: rgba(255,255,255,1);
-	  letter-spacing: 5px;
-	   -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
+    /*font: normal normal bold 20px/1 Arial, Helvetica, sans-serif;*/
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 5px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
+
 .map {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .scroll {
-  height: 100%;
+    height: 100%;
 }
 
 #map {
-width: 100% !important;
+    width: 100% !important;
     height: 86.3% !important;
 }
 
-
-.cat-headBar{
-      float: left !important;
+.cat-headBar {
+    float: left !important;
     position: relative !important;
 }
 
-.cat-list{
+.cat-list {
 
-     margin-top: -30px;
+    margin-top: -30px;
 
 }
 
-.cat-icon{
-     z-index: 10;
+.cat-icon {
+    z-index: 10;
 }
 
 /*.cat-line-div{
 background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }*/
 
-
-
 .list .item.item-accordion {
-  line-height: 38px;
-  padding-top: 0;
-  padding-bottom: 0;
-  transition: 0.09s all linear;
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
 }
+
 .list .item.item-accordion.ng-hide {
-  line-height: 0px;
+    line-height: 0px;
 }
+
 .list .item.item-accordion.ng-hide-add,
 .list .item.item-accordion.ng-hide-remove {
-  display: block !important;
+    display: block !important;
 }
 
-    
 /*.cat-rep{
 height: 320px 
     }*/
 
-
 .cat-rep:last-child {
-      height: 29% !important;
+    height: 29% !important;
 }
-
-
-
 
 /* Empty. Add your own CSS if you like */
 /*.top-bar{
@@ -222,47 +224,54 @@ height: 320px
 }
 */
 
-#pg-select-interest{
-  top: -100vh;
+#pg-select-interest {
+    top: -100vh;
     background: rgb(0, 0, 0);
     z-index: 2;
-    transition:0.3s ease;
+    transition: 0.3s ease;
 }
-#pg-select-interest.visible{
-  top:0vh;
+
+#pg-select-interest.visible {
+    top: 0vh;
 }
-.today-live{
-  height: 1.2em;
+
+.today-live {
+    height: 1.2em;
     margin: auto;
-    margin-top:0.7em;
+    margin-top: 0.7em;
     vertical-align: middle;
 }
-.menu-content{
-  background:url('../img/main_bkg.jpg');
-  background-size:cover;
-  /*background-size: contain;*/
 
-  background-position: center;
-}
-.ven-nav-btn{
-  color:#FFF !important;
-}
-.top-bar{
-  background:none !important;
-}
-.tabs{
-  background:none !important;
-  //border-color:black !important;
-  width: 80%;
-  margin-left:-50px;
-  border-bottom:0px !important;
-}
-.tabs .tab-item{
-  //margin:10px;
+.menu-content {
+    background: url('../img/main_bkg.jpg');
+    background-size: cover;
+    /*background-size: contain;*/
+
+    background-position: center;
 }
 
-.interest-btn{
-  display: block;
+.ven-nav-btn {
+    color: #FFF !important;
+}
+
+.top-bar {
+    background: none !important;
+}
+
+.tabs {
+    background: none !important;
+/ / border-color : black !important;
+    width: 80%;
+    margin-left: -50px;
+    border-bottom: 0px !important;
+}
+
+.tabs .tab-item {
+/ / margin : 10 px;
+}
+
+.interest-btn {
+    display: block;
     width: 100%;
     /* height: 50px; */
     text-align: left;
@@ -275,27 +284,29 @@ height: 320px
     font-size: 18px;
 }
 
-.interest-btn i{
-  float:right;
+.interest-btn i {
+    float: right;
 }
+
 #map {
-  width: 100%;
-  height: 75vh;
+    width: 100%;
+    height: 75vh;
 }
 
-.sub-head{
-  margin-top: 100px
+.sub-head {
+    margin-top: 100px
 }
 
-.subCat-li{
-  height: 80px;
-  padding: 0px;
-    /*background: url(../../img/subCat-li.png);*/
-  }
-  .subCat-li img{
-        width: 100%;
+.subCat-li {
     height: 80px;
-  }
+    padding: 0px;
+    /*background: url(../../img/subCat-li.png);*/
+}
+
+.subCat-li img {
+    width: 100%;
+    height: 80px;
+}
 
 .li-head {
     position: relative;
@@ -322,152 +333,146 @@ height: 320px
     color: #fff;
 }
 
-  .li-content p{
-color: #fff;
-font-size: 10px;
-float: right;
+.li-content p {
+    color: #fff;
+    font-size: 10px;
+    float: right;
 
-  }
+}
 
-    .li-foot p{
-color: #fff;
-font-size: 10px;
-float: right;
+.li-foot p {
+    color: #fff;
+    font-size: 10px;
+    float: right;
 
-  }
+}
 
-  a{
+a {
     text-decoration: none;
-  }
+}
 
-  #mapEvent {
+#mapEvent {
     width: 100% !important;
     /* height: 65% !important; */
     height: 420px !important;
 }
 
-.foot-event{
-    background-color: rgba(255, 255, 255, 0.18)  !important;
-        height: 80px !important;
+.foot-event {
+    background-color: rgba(255, 255, 255, 0.18) !important;
+    height: 80px !important;
 }
 
-.eve-foot-tit{
+.eve-foot-tit {
     line-height: 94px !important;
     height: 80px !important;
     color: #fff !important;
     font-size: 18px !important;
 }
 
-.event-cont-foot{
- width: 100% ; 
+.event-cont-foot {
+    width: 100%;
 }
-.event-cont-foot p{
-margin-top: 22px;
+
+.event-cont-foot p {
+    margin-top: 22px;
     margin-left: 23px;
     color: #fff;
     font-size: 17px;
-} 
+}
 
-.event-cont-foot .p2{
+.event-cont-foot .p2 {
     margin-top: -35px;
     float: right;
     color: #fff;
     margin-right: 10px;
     font-size: 12px;
-}   
-
-.tab-nav.tabs{
-      margin-left: 37px !important;
 }
 
-.cat-icon2{
-  float: right;
-  color: #fff;
+.tab-nav.tabs {
+    margin-left: 37px !important;
 }
 
-.cat-icon{
-  color: #fff;
+.cat-icon2 {
+    float: right;
+    color: #fff;
 }
 
+.cat-icon {
+    color: #fff;
+}
 
-
-.title.title-center.header-item{
+.title.title-center.header-item {
     font-size: 113%;
     /*border-bottom: 1px solid rgba(255,255,255,0.21) !important;*/
     letter-spacing: 9px !important;
-        font-weight: bolder !important;
+    font-weight: bolder !important;
 
     margin-left: 20px;
     left: 5%;
 
 }
 
-.description-modal{
-margin-top: 70px;
+.description-modal {
+    margin-top: 70px;
     margin-left: 20px;
     color: #fff;
-  border-bottom: 1px solid rgba(255,255,255,0.21) !important;
-/*height: 170px;*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21) !important;
+    /*height: 170px;*/
 }
 
-
-.description-modal i{
-padding-right: 30px;
-font-size: 20px;
+.description-modal i {
+    padding-right: 30px;
+    font-size: 20px;
 }
 
-.description-modal p{
+.description-modal p {
     margin-left: 52px;
     font-size: 11px;
 }
 
-.des-des{
+.des-des {
     margin-left: 52px;
-margin-top: 30px
+    margin-top: 30px
 }
 
-
-.open-modal{
-  margin-top: 30px;
+.open-modal {
+    margin-top: 30px;
     margin-left: 20px;
     color: #fff;
-    border-bottom: 1px solid rgba(255,255,255,0.21) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21) !important;
     height: 120px;
 }
 
-.open-modal i{
-padding-right: 30px;
-font-size: 20px;
+.open-modal i {
+    padding-right: 30px;
+    font-size: 20px;
 }
-.open-modal p{
+
+.open-modal p {
     margin-left: 52px;
     font-size: 11px;
     margin-top: 15px;
 }
 
-.open-des{
+.open-des {
     margin-left: 52px;
     font-size: 11px;
 
 }
 
-.location-modal{
-  height: 94px !important;
+.location-modal {
+    height: 94px !important;
 }
 
-
-
-.top-event{
-       background-color: rgba(255,255,255,0.20) !important;
+.top-event {
+    background-color: rgba(255, 255, 255, 0.20) !important;
     height: 117px !important;
     position: relative;
     top: 62px !important;
     border-bottom: 0px transparent !important;
 }
 
-
-
-.eve-top-tit{
+.eve-top-tit {
     line-height: 120px !important;
     height: 80px !important;
     color: #fff !important;
@@ -475,45 +480,42 @@ font-size: 20px;
     font-size: 22px !important;
 }
 
-.event-open-des{
-      float: right !important;
+.event-open-des {
+    float: right !important;
     margin-top: -84px !important;
     margin-right: 30px !important;
 }
 
-
-.open-des-event{
-      float: right;
+.open-des-event {
+    float: right;
     /* margin-left: 40px; */
     margin-right: 40px;
     margin-top: -21px;
 }
 
-
-.eve-p2{
+.eve-p2 {
     float: right !important;
     margin-top: -30px !important;
     margin-right: 90px !important;
 }
 
-.foot-event-dir{
-position: relative !important;
-
+.foot-event-dir {
+    position: relative !important;
 
 }
 
-.icon-right-eve{
-float: right;
+.icon-right-eve {
+    float: right;
     margin-top: -57px;
     font-size: 28px;
     color: #fff !important;
 }
 
-.noti-icon{
-  margin-top: 10px !important;
+.noti-icon {
+    margin-top: 10px !important;
 }
 
-.foot-icon{
+.foot-icon {
     font-size: 40px !important;
     margin-top: -13px;
     text-align: center;
@@ -521,10 +523,8 @@ float: right;
     width: 100%;
 }
 
-
-.background-main{
-   background: url(../img/main_bkg.jpg) no-repeat
-    center center fixed !important;
+.background-main {
+    background: url(../img/main_bkg.jpg) no-repeat center center fixed !important;
     -webkit- background-size: cover;
     -moz- background-size: cover;
     -o- background-size: cover;
@@ -532,28 +532,25 @@ float: right;
 
 }
 
-.cat-icon-right{
-float: right;
-  
+.cat-icon-right {
+    float: right;
+
 }
 
-.cat-h4{
-      text-align: center !important;
-       margin-top: -7px !important;  
+.cat-h4 {
+    text-align: center !important;
+    margin-top: -7px !important;
     margin-left: 68px !important;
-    color: rgba(255,255,255,0.50) !important;
+    color: rgba(255, 255, 255, 0.50) !important;
     font-family: Avenir-Book !important;
     letter-spacing: 2px !important;
     font-size: 11px;
 }
 
-
-
 .bar.bar-dark {
     border-color: rgba(17, 17, 17, 0) !important;
 
 }
-
 
 /*hr.style-one {
     border: 0;
@@ -565,12 +562,12 @@ float: right;
 hr.style-one {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(232, 233, 234) , rgba(0, 0, 0, 0));
-    opacity: 0.5; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(232, 233, 234), rgba(0, 0, 0, 0));
+    opacity: 0.5;
 }
 
-.com-soon{
-      /* float: right; */
+.com-soon {
+    /* float: right; */
     text-align: center !important;
 
     margin-top: 90px !important;
@@ -580,39 +577,34 @@ hr.style-one {
     /* margin-left: 60px; */
 }
 
-.extraWidthClass{
-  width: 100%;
-  height: 80px;
+.extraWidthClass {
+    width: 100%;
+    height: 80px;
 }
 
 .cat-h3 {
-      text-align: center;
+    text-align: center;
     margin-top: -35px;
     margin-left: 68px;
     color: #fff;
     font-family: avenir-book;
     font-size: 15px;
     letter-spacing: 5px;
-    }
-
-
-
-.tab-nav.tabs{
-      height: 44px !important;
 }
 
+.tab-nav.tabs {
+    height: 44px !important;
+}
 
+.head-calen {
 
-
-.head-calen{
-
-  text-align: center;
+    text-align: center;
 
 }
 
-.p-h-calen{
+.p-h-calen {
 
- text-align: center;
+    text-align: center;
     margin-top: 13px;
     margin-left: 5px;
     color: #fff;
@@ -623,60 +615,59 @@ hr.style-one {
 }
 
 .p-h-calen2 {
-   color: #DEDEE2;
+    color: #DEDEE2;
     font-family: avenir-light;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.p2-h-calen{
-color: #DEDEE2;
+.p2-h-calen {
+    color: #DEDEE2;
     font-family: avenir-light;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgba(255,255,255,0.50) !important;
+    color: rgba(255, 255, 255, 0.50) !important;
 }
 
-.low-head-calen{
-  text-align: center;
-
-}
-
-.cont-head-calen{
-  text-align: center;
-  margin-right: 100px
+.low-head-calen {
+    text-align: center;
 
 }
 
-.p-lh-calen{
+.cont-head-calen {
+    text-align: center;
+    margin-right: 100px
 
-  color: rgba(222,222,226,0.50);
+}
+
+.p-lh-calen {
+
+    color: rgba(222, 222, 226, 0.50);
     font-size: 15px;
     margin-top: 20px;
     font-family: avenir-light;
     letter-spacing: 5px;
 
-  }
+}
 
-.p-l2h-calen{
-    color: rgba(222,222,226,0.50);
+.p-l2h-calen {
+    color: rgba(222, 222, 226, 0.50);
     font-size: 15px;
     margin-top: 20px;
     font-family: avenir-light;
     letter-spacing: 5px
 }
 
-.p-ch-calen{
+.p-ch-calen {
     color: #fafafa;
     font-size: 12px;
     margin-top: 44px;
     /*width: 50%;*/
 }
 
-
-.left-icon-calen{
+.left-icon-calen {
     float: left;
     margin-top: -2px;
     font-size: 20px;
@@ -685,8 +676,7 @@ color: #DEDEE2;
     margin-left: 80px;
 }
 
-
-.right-icon-calen{
+.right-icon-calen {
     float: right;
     margin-top: -32px;
     font-size: 20px;
@@ -697,227 +687,245 @@ color: #DEDEE2;
     /*margin-right: 150px;*/
 }
 
-
-.p-ch2-calen{
+.p-ch2-calen {
     color: #DEDEE2;
     font-size: 18px;
     margin-top: 48px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Date Picker Css--------------------------------------------------------------------------------------*/
 .padding_zero {
-  padding: 0;
+    padding: 0;
 }
 
 .ionic_datepicker_popup .font_bold {
-  font-size: 13px;
+    font-size: 13px;
     font-family: avenir-light;
-    color: rgba(250,250,250,0.7);
+    color: rgba(250, 250, 250, 0.7);
 }
+
 .ionic_datepicker_popup .padding_top_zero {
-  padding-top: 0;
+    padding-top: 0;
 }
+
 .ionic_datepicker_popup .padding_left_5px {
-  padding-left: 5px;
+    padding-left: 5px;
 }
+
 .ionic_datepicker_popup .padding_right_5px {
-  padding-right: 5px;
+    padding-right: 5px;
 }
+
 .ionic_datepicker_popup .calendar_grid {
-  height: 215px;
+    height: 215px;
 }
+
 .ionic_datepicker_popup .today {
-  border: 0px solid #383C3B;
-  border-radius: 50%;
+    border: 0px solid #383C3B;
+    border-radius: 50%;
 }
+
 .ionic_datepicker_popup .selected_date {
-  background-color: rgba(250, 250, 250, 0.31);
-  border-radius: 50%;
-  color: #fff;
-  font-weight: bold;
+    background-color: rgba(250, 250, 250, 0.31);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
 }
+
 .ionic_datepicker_popup .popup-head {
-  background-color: #383C3B;
-  display: none;
+    background-color: #383C3B;
+    display: none;
 }
+
 .ionic_datepicker_popup .popup-head .popup-title {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .ionic_datepicker_popup .popup-head .popup-sub-title {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .ionic_datepicker_popup .popup-body {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
+
 .ionic_datepicker_popup .popup-body .selected_date_full {
-  background-color: #383C3B;
-  margin: -10px -10px 0 -10px;
-  height: 45px;
-  text-align: center;
-  font-weight: bold;
-  color: #fff;
-  line-height: 45px;
-  font-size: 18px;
+    background-color: #383C3B;
+    margin: -10px -10px 0 -10px;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    line-height: 45px;
+    font-size: 18px;
 }
+
 .ionic_datepicker_popup .popup-body .select_section {
-  padding: 1px 5px;
+    padding: 1px 5px;
 }
+
 .ionic_datepicker_popup .popup-body .pointer_events_none {
-  pointer-events: none;
-  color: #aaaaaa !important;
+    pointer-events: none;
+    color: #aaaaaa !important;
 }
+
 .ionic_datepicker_popup .popup-body .month_select, .ionic_datepicker_popup .popup-body .year_select {
     border: none;
     border-bottom: 0px solid #383C3B;
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
 }
+
 .ionic_datepicker_popup .popup-body .month_select .input-label, .ionic_datepicker_popup .popup-body .year_select .input-label {
-  padding: 2px 0;
-  width: 0;
+    padding: 2px 0;
+    width: 0;
 }
+
 .ionic_datepicker_popup .popup-body .month_select select, .ionic_datepicker_popup .popup-body .year_select select {
-  left: 11px;
-  border: none;
-  padding: 0;
-  background: transparent;
+    left: 11px;
+    border: none;
+    padding: 0;
+    background: transparent;
 }
+
 .ionic_datepicker_popup .popup-body .month_select:after, .ionic_datepicker_popup .popup-body .year_select:after {
-  right: 5px;
-  color: #383C3B;
+    right: 5px;
+    color: #383C3B;
 }
+
 .ionic_datepicker_popup .popup-body .show_nav {
-  padding: 10px 30px 0 30px;
+    padding: 10px 30px 0 30px;
 }
+
 .ionic_datepicker_popup .popup-body .show_nav .prev_btn_section {
-  padding: 5px 0;
-  text-align: left;
+    padding: 5px 0;
+    text-align: left;
 }
+
 .ionic_datepicker_popup .popup-body .show_nav .prev_btn_section button {
-  padding: 0;
-  font-size: 30px;
-   margin-top: -20px;
+    padding: 0;
+    font-size: 30px;
+    margin-top: -20px;
     color: #fff;
 }
+
 .ionic_datepicker_popup .popup-body .show_nav .next_btn_section {
-  padding: 5px 0;
-  text-align: right;
+    padding: 5px 0;
+    text-align: right;
 }
+
 .ionic_datepicker_popup .popup-body .show_nav .next_btn_section button {
-  padding: 0;
-      font-size: 30px;
-       margin-top: -20px;
+    padding: 0;
+    font-size: 30px;
+    margin-top: -20px;
     color: #fff;
 }
+
 .ionic_datepicker_popup .popup-body .button-clear {
-  color: #383C3B;
+    color: #383C3B;
 }
+
 .ionic_datepicker_popup .popup-buttons {
-  padding: 0;
-  min-height: 45px;
+    padding: 0;
+    min-height: 45px;
 }
+
 .ionic_datepicker_popup .popup-buttons button {
-background-color: rgba(56, 60, 59, 0);
-  border-radius: 0;
-  margin-right: 1px;
-  color: #ffffff;
+    background-color: rgba(56, 60, 59, 0);
+    border-radius: 0;
+    margin-right: 1px;
+    color: #ffffff;
 }
 
 .ionic_datepicker_modal .header, .ionic_datepicker_modal .footer {
-  background-color: #383C3B;
+    background-color: #383C3B;
 }
+
 .ionic_datepicker_modal .header .title, .ionic_datepicker_modal .header .button, .ionic_datepicker_modal .footer .title, .ionic_datepicker_modal .footer .button {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .ionic_datepicker_modal .footer .button-block {
-  margin: 0;
+    margin: 0;
 }
+
 .ionic_datepicker_modal .today {
-  border: 1px solid #383C3B;
+    border: 1px solid #383C3B;
 }
+
 .ionic_datepicker_modal .selected_date {
-  background-color: #383C3B;
-  color: #fff;
-  font-weight: bold;
+    background-color: #383C3B;
+    color: #fff;
+    font-weight: bold;
 }
+
 .ionic_datepicker_modal .pointer_events_none {
-  pointer-events: none;
-  color: #aaaaaa !important;
+    pointer-events: none;
+    color: #aaaaaa !important;
 }
+
 .ionic_datepicker_modal .select_section {
-  padding: 1px 5px;
+    padding: 1px 5px;
 }
+
 .ionic_datepicker_modal .button-clear {
-  color: #383C3B;
+    color: #383C3B;
 }
+
 .ionic_datepicker_modal .month_select, .ionic_datepicker_modal .year_select {
-  border: none;
-  border-bottom: 1px solid #383C3B;
-  padding: 0;
+    border: none;
+    border-bottom: 1px solid #383C3B;
+    padding: 0;
 }
+
 .ionic_datepicker_modal .month_select .input-label, .ionic_datepicker_modal .year_select .input-label {
-  padding: 2px 0;
-  width: 0;
+    padding: 2px 0;
+    width: 0;
 }
+
 .ionic_datepicker_modal .month_select select, .ionic_datepicker_modal .year_select select {
-  left: 10px;
-  border: none;
-  padding: 0 10px;
+    left: 10px;
+    border: none;
+    padding: 0 10px;
 }
+
 .ionic_datepicker_modal .month_select:after, .ionic_datepicker_modal .year_select:after {
-  right: 5px;
-  color: #383C3B;
+    right: 5px;
+    color: #383C3B;
 }
+
 .ionic_datepicker_modal .padding_left_5px {
-  padding-left: 5px;
+    padding-left: 5px;
 }
+
 .ionic_datepicker_modal .padding_right_5px {
-  padding-right: 5px;
+    padding-right: 5px;
 }
+
 .ionic_datepicker_modal .date_col {
-  height: 50px;
-  line-height: 50px;
+    height: 50px;
+    line-height: 50px;
 }
+
 .ionic_datepicker_modal .font_bold {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 .ionic_datepicker_modal .font_22px {
-  font-size: 22px;
+    font-size: 22px;
 }
+
 .platform-android .ionic_datepicker_modal .bar .title.title-left {
-  text-align: center;
+    text-align: center;
 }
+
 .platform-android .ionic_datepicker_modal select {
-  left: 25%;
+    left: 25%;
 }
+
 .platform-ios .ionic_datepicker_modal select {
-  left: 5%;
+    left: 5%;
 }
-
-
 
 /*Tabs Css goes here*/
 
@@ -1004,9 +1012,6 @@ ion-slide:nth-child(2n) {
     }
 */
 /*Tabs css ends here*/
-
-
-
 
 /*OLD DESIGN CSS STARTS HERE---#######-------------##########-------------------#########------------------------#########*/
 
@@ -1104,22 +1109,58 @@ h1, h2, h3, h4, h5, h6, p{
   display: block;
     width: 100%;
     /* height: 50px; */
-    text-align: left;
-    text-transform: uppercase;
-    color: #FFF;
-    background: rgba(255, 255, 255, 0.03);
-    border: none;
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 18px;
+text-align: left
+
+;
+text-transform: uppercase
+
+;
+color: #FFF
+
+;
+background:
+
+rgba
+(
+255
+,
+255
+,
+255
+,
+0.03
+)
+;
+border: none
+
+;
+margin-top:
+
+50
+px
+
+;
+padding:
+
+20
+px
+
+;
+font-size:
+
+18
+px
+
+;
 }
 
-.interest-btn i{
-  float:right;
+.interest-btn i {
+    float: right;
 }
+
 #map {
-  width: 100%;
-  height: 75vh;
+    width: 100%;
+    height: 75vh;
 }
 
 .item.item-stable {
@@ -1132,52 +1173,54 @@ h1, h2, h3, h4, h5, h6, p{
     top: 15vh;
 }
 
-#pg-select-interest .top-bar{
-  height: 15vh;
+#pg-select-interest .top-bar {
+    height: 15vh;
 }
 
 .item.active.item-stable,
 .item.activated.item-stable,
-.item-complex.active .item-content.item-stable, 
-.item-complex.activated .item-content.item-stable, 
-.item .item-content.active.item-stable, 
-.item .item-content.activated.item-stable 
-{
+.item-complex.active .item-content.item-stable,
+.item-complex.activated .item-content.item-stable,
+.item .item-content.active.item-stable,
+.item .item-content.activated.item-stable {
     /* box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.19); */
     background-color: rgba(255, 255, 255, 0.09);
     border: none;
 }
 
 .item {
-  border-color: rgba(255, 255, 255, 0.08);
-  background-color: rgba(0, 0, 0, 0.17);
-  color: #FFF;
-  font-size: 16px;
+    border-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(0, 0, 0, 0.17);
+    color: #FFF;
+    font-size: 16px;
 }
 
 #list-of-events.has-header {
     top: 18vh;
 }
 
-.hidden{
-  display:none;
+.hidden {
+    display: none;
 }
 
-.event-list .item{
+.event-list .item {
     background-size: cover;
     height: 100px;
 }
-.title-event{
-  color:#FFF !important;
-  font-size:16px;
-  display:block;
+
+.title-event {
+    color: #FFF !important;
+    font-size: 16px;
+    display: block;
 }
-.title-event small{
-  display:block;
-  font-size:14px;
+
+.title-event small {
+    display: block;
+    font-size: 14px;
 }
-.details-event{
-  color: #FFF;
+
+.details-event {
+    color: #FFF;
     text-align: right;
     bottom: 2vh;
     position: absolute;
@@ -1219,33 +1262,25 @@ h1, h2, h3, h4, h5, h6, p{
     padding: 8px;
 }
 
-*/
+*
 
+/
 
 /*OLD DESIGN CSS ENDS HERE---#######-------------##########-------------------#########------------------------#########*/
 
-
-
-
-
-
 /*Date css mine*/
-.popup-container
-
-{
+.popup-container {
     width: 100% !important;
     height: 100% !important;
 
 }
 
-.popup-container .popup
-{
+.popup-container .popup {
     width: 100% !important;
     height: 100% !important;
-max-height: 100%  !important;
-/*BG.png*/
-        background: url(../img/main_bkg.jpg) no-repeat
-    center center fixed !important;
+    max-height: 100% !important;
+    /*BG.png*/
+    background: url(../img/main_bkg.jpg) no-repeat center center fixed !important;
     -webkit- background-size: cover !important;
     -moz- background-size: cover !important;
     -o- background-size: cover !important;
@@ -1253,12 +1288,9 @@ max-height: 100%  !important;
 
 }
 
-
 .ionic_datepicker_popup .popup-body {
     background-color: rgba(255, 255, 255, 0) !important;
 }
-
-
 
 .ionic_datepicker_popup .popup-body .selected_date_full {
     background-color: rgba(56, 60, 59, 0) !important;
@@ -1266,15 +1298,16 @@ max-height: 100%  !important;
     font-size: 10px;
     margin-left: 18px;
 }
+
 .dates_num {
 
-      color: #fff !important;
+    color: #fff !important;
     font-size: 155%;
     font-family: avenir-light;
 }
 
-.date_selection{
-      margin-top: 10px;
+.date_selection {
+    margin-top: 10px;
 }
 
 .ionic_datepicker_popup .popup-buttons button {
@@ -1282,32 +1315,28 @@ max-height: 100%  !important;
 
 }
 
+.foot-main-event {
 
-
-.foot-main-event{
-
-  /*background-color: rgb(0, 0, 0) !important;*/
-  /*background-color:  #000 !important;*/
+    /*background-color: rgb(0, 0, 0) !important;*/
+    /*background-color:  #000 !important;*/
     height: 80px !important;
-    background: url(../img/main_bkg.jpg)  no-repeat;
-  background-size: cover;
+    background: url(../img/main_bkg.jpg) no-repeat;
+    background-size: cover;
     -webkit- background-size: cover;
     -moz- background-size: cover;
     -o- background-size: cover;
 }
 
-
-.foot-venumap{
+.foot-venumap {
     height: 80px !important;
-    background: url(../img/main_bkg.jpg)  no-repeat;
-  background-size: cover;
+    background: url(../img/main_bkg.jpg) no-repeat;
+    background-size: cover;
     -webkit- background-size: cover;
     -moz- background-size: cover;
     -o- background-size: cover;
 }
 
-
-.foot-venumap .p2{
+.foot-venumap .p2 {
 
     margin-top: 22px !important;
     /* float: right !important; */
@@ -1315,9 +1344,9 @@ max-height: 100%  !important;
     /* margin-right: 10px !important; */
     font-size: 12px !important;
     margin-left: 143px;
-  }
+}
 
-.mainHeadImg{
+.mainHeadImg {
     width: 130px;
     /* margin: auto; */
     margin-top: 22px;
@@ -1325,43 +1354,38 @@ max-height: 100%  !important;
 
 }
 
-.selectInterest p{
-font-weight: 700 !important;
+.selectInterest p {
+    font-weight: 700 !important;
 
 }
 
+.header-item center sub {
 
-.header-item center sub{
-
-
-  color: #55CCEE;
+    color: #55CCEE;
     letter-spacing: 4px !important;
     font-size: 16px;
     font-weight: 500;
 
 }
 
-
-.icon-right p{
+.icon-right p {
     letter-spacing: 1.5px;
-        margin-top: 10px;
+    margin-top: 10px;
 }
 
-.selectInterest{
-background-color: rgba(255, 255, 255, 0.05) !important;
-      height: -67px !important;
-        margin-bottom: 0px  !important;
-             margin-top: -13px !important;
+.selectInterest {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    height: -67px !important;
+    margin-bottom: 0px !important;
+    margin-top: -13px !important;
 }
 
+.icon-right {
 
-.icon-right{
-
-  color: #fff !important;
+    color: #fff !important;
 }
 
-
-.ion-chevron-down{
+.ion-chevron-down {
     float: right;
     font-size: 20px;
     /* font-weight: 100; */
@@ -1371,91 +1395,86 @@ background-color: rgba(255, 255, 255, 0.05) !important;
 
 }
 
-
-.ion-calendar.cat-icon{
+.ion-calendar.cat-icon {
 
     margin-right: 10px;
 
 }
 
-
-.ion-close-round.cat-icon{
+.ion-close-round.cat-icon {
 
     margin-left: 10px;
 
-
 }
 
+.range-cat {
 
-.range-cat{
-
-  border-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.08);
     background-color: rgba(0, 0, 0, 0);
     color: #FFF;
     font-size: 16px;
 }
 
-.head-calen{
-margin-top: -52px;
+.head-calen {
+    margin-top: -52px;
 
 }
-.icon-cal-x{
-margin-top: -8px;
-  margin-left: 0px !important;
+
+.icon-cal-x {
+    margin-top: -8px;
+    margin-left: 0px !important;
 }
 
-.date-icon{
+.date-icon {
 
-  font-size: 18px;
+    font-size: 18px;
 }
-
 
 .overlay {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
-opacity: .3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+    opacity: .3;
 }
+
 .headertitle {
-  font-family: Avenir-Book;
-  word-spacing: 6px;
+    font-family: Avenir-Book;
+    word-spacing: 6px;
 }
 
 #span-today {
-  font-size: 79%;
+    font-size: 79%;
 }
 
 #span-live {
-  font-size: 79%;
+    font-size: 79%;
 }
-
 
 #interest-p {
-  line-height: inherit;
-  position: absolute;
-  right: 149px;
-  color: white;
-  font-family: Avenir-Book;
-  letter-spacing: 4px;
+    line-height: inherit;
+    position: absolute;
+    right: 149px;
+    color: white;
+    font-family: Avenir-Book;
+    letter-spacing: 4px;
 }
 
+.xbtncat {
 
-.xbtncat{
-
-     width: 70%;
+    width: 70%;
     height: 100%;
     margin-top: 10px;
     padding-top: 10px;
     padding-left: 10px;
 }
 
-.calbtncat{
-      width: 70%;
+.calbtncat {
+    width: 70%;
     height: 100%;
     margin-top: 10px;
     padding-top: 10px;
     padding-right: 10px;
 }
 
-.ibtncat{
+.ibtncat {
     width: 46%;
     height: 100%;
     margin-top: 4px;
@@ -1463,51 +1482,52 @@ opacity: .3;
 
 }
 
+.ibtncatsml {
 
-.ibtncatsml{
-
-width: 19px;
+    width: 19px;
 
 }
 
+.icon-eve-down {
+    color: #fff;
 
-.icon-eve-down{
-  color: #fff;
+}
 
+.menubtnmain {
 
-  }
-
-  .menubtnmain{
-
-     width: 70%;
+    width: 70%;
     height: 100%;
     margin-top: 10px;
     padding-top: 10px;
     padding-left: 10px;
 }
-.menubtnadown{
- float: right;
-   width: 6%;
+
+.menubtnadown {
+    float: right;
+    width: 6%;
     color: #fff;
     margin-top: 20px;
     margin-right: 30px;
 }
+
 .xbtnevent {
-  width: 70%;
+    width: 70%;
     height: 100%;
     margin-top: 10px;
     padding-top: 0px;
     padding-left: 10px;
 }
+
 .infobtnevent {
-     width: 37%;
+    width: 37%;
     height: 100%;
     margin-top: 5px;
     padding-right: 7px;
     margin-right: -30px;
 }
+
 .col100 {
-  -webkit-box-flex: 0;
+    -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
     -moz-box-flex: 0;
     -moz-flex: 0 0 100%;
@@ -1515,7 +1535,8 @@ width: 19px;
     flex: 0 0 100%;
     max-width: 100%;
 }
-.calmonyrlabel{
+
+.calmonyrlabel {
     display: table;
     padding: 7px 10px 7px 0px;
     max-width: 200px;
@@ -1523,8 +1544,9 @@ width: 19px;
     color: #444;
     font-size: 17px;
 }
-.calmonyrlabel2{
-      -webkit-appearance: none;
+
+.calmonyrlabel2 {
+    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     position: absolute;
@@ -1534,7 +1556,7 @@ width: 19px;
     padding: 0 48px 0 16px;
     max-width: 65%;
     border: none;
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
     color: #fafafa;
     text-indent: .01px;
     text-overflow: '';
