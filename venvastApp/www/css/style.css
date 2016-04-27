@@ -146,9 +146,9 @@ ion-view {
     background-color: transparent important; /* or transparent, or background:none */
 }
 
-.scroll-content {
+ .scroll-content {
     overflow: visible !important;
-}
+} 
 
 .font {
     /*font: normal normal bold 20px/1 Arial, Helvetica, sans-serif;*/
