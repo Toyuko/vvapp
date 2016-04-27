@@ -1,4 +1,7 @@
-﻿<ion-view view-title="<center>TODAY<sub>{{title}}</sub></center>" cache-view="false">
+﻿<ion-view hide-back-button="true" view-title="" cache-view="false">
+
+    <!-- //<center>TODAY<sub>{{title}}</sub></center> -->
+    <img class="mainHeadImg" src="img/TodayLIVE.png">
     <ion-content class="has-header; ">
 <!--  <a class="button button-full icon-right ion-chevron-down button-light" ng-click="gotoCategoryModal()" nav-transition="android"><p style=" 
       line-height: inherit;position: absolute;color: white;">SELECT INTEREST</p></a>
@@ -8,12 +11,12 @@
  <a class="button button-full icon-right button-light selectInterest" ng-click="gotoCategoryModal()" nav-transition="android">
 
  <p style=" 
-      line-height: inherit;position: absolute;right: 99px;color: white; font-family: Avenir-Book; letter-spacing: 6px;">SELECT INTEREST</p></a>
+      line-height: inherit;position: absolute;right: 185px;bottom: -2px;color: white; font-family: Avenir-Light; letter-spacing: 4px;font-size: 12px;">SELECT INTEREST</p></a>
 
 
       <div class="event-cont-foot bar bar-footer foot-venumap" ng-click="showEventMainModal()">
-	<p>LEVELS<p>
-	<p class="p2">Ends in 4:00 h<p>
+	<p style="font-family: avenir-light; letter-spacing: 2px;">LEVELS<p>
+	<p class="p2" style="font-family: avenir-light;">Ends in 4:00 h<p>
 </div>
               <div id="map" data-tap-disabled="true"></div>
     </ion-content>

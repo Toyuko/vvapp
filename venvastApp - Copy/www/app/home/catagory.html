@@ -3,17 +3,22 @@
 
 <!-- <ion-view view-title="<center>TODAY<sub>{{title}}</sub></center>"> -->
 
-    <ion-content class="background" overflow-scroll="true">
+
+    <ion-content class="background" overflow-scroll="false">
    <!-- <div class="bar bar-header cat-headBar"> -->
    <!-- href="#/home/main" -->
-   <a class="button button-icon icon ion-close-round cat-icon" ng-click="modalCatagory.hide()" nav-transition="android"></a>   
-   <a class="button button-icon icon ion-calendar cat-icon cat-icon-right" ng-click="openCalender()"nav-transition="android"></a>  
+<!--    <a class="button button-icon icon ion-close-round cat-icon" ng-click="modalCatagory.hide()" nav-transition="android"></a>
+   <a class="button button-icon icon ion-calendar cat-icon cat-icon-right" ng-click="openCalender()"nav-transition="android"></a> -->
+
+      <a class="button button-icon icon  cat-icon" ng-click="modalCatagory.hide()" nav-transition="android"><img class="xbtncat" src="img/icons/close.png"></a>   
+   <a class="button button-icon icon cat-icon cat-icon-right" ng-click="openCalender()"nav-transition="android"> <img class="calbtncat" src="img/icons/calendar.png"></a>  
 <h3 class="cat-h3">TODAY</h3>
-   <h6 class="cat-h4">{{selectedDate}}</h6>
+   <h6 class="cat-h4">{{selectedDate | uppercase}}</h6>
 
    <div class="item range range-cat">
   <i class="">1 KM</i>
   <input type="range" name="volume">
+
   <i class="">5 KM</i>
 </div>
 
@@ -45,7 +50,7 @@
           <ion-item class="item item-trns"
                     ng-click="gotoSubCategory()" >
             &nbsp;
-                    <div class="enjoy-css" style="font-family: Avenir-Book;">{{item.name}} </div>
+                    <div class="enjoy-css" style="font-family: Avenir-Light; letter-spacing: 4px;font-weight: bold;font-size: 15px">{{item.name | uppercase}} </div>
 <hr class="style-one">
           </ion-item>
 </div>
