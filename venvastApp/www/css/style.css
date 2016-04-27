@@ -390,13 +390,24 @@ margin-top: 22px;
 
 
 .title.title-center.header-item{
-    font-size: 113%;
-    /*border-bottom: 1px solid rgba(255,255,255,0.21) !important;*/
+   /* font-size: 113%;
+    border-bottom: 1px solid rgba(255,255,255,0.21) !important;
     letter-spacing: 9px !important;
         font-weight: bolder !important;
 
     margin-left: 20px;
-    left: 5%;
+    left: 5%; */
+  left: 5%;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 5px;
+    color: #fff;
+    font-family: avenir-light;
+    letter-spacing: 7px;
+    font-weight: bold;
+    left: 0px !important;
+    right: 0px !important; 
+
 
 }
 
