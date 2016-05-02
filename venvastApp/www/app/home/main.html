@@ -1,20 +1,24 @@
 <ion-view hide-back-button="true" view-title="" cache-view="false">
 
 
-<img class="mainHeadImg" src="img/TodayLIVE.png">
+    <img class="mainHeadImg" src="img/TodayLIVE.png">
     <ion-content class="has-header; ">
-    <img class="menubtnadown" src="img/icons/Arrowdown.png" />
-   <!-- <i class="icon ion-chevron-down"></i> -->
- <a class="button button-full icon-right button-light selectInterest" ng-click="gotoCategoryModal()" nav-transition="android">
+        <img class="menubtnadown" src="img/icons/Arrowdown.png"/>
+        <!-- <i class="icon ion-chevron-down"></i> -->
+        <a class="button button-full icon-right button-light selectInterest" ng-click="gotoCategoryModal()"
+           nav-transition="android">
 
- 	<p style=" 
-      line-height: inherit;position: absolute;right: 185px;bottom: -2px;color: white; font-family: Avenir-Light; letter-spacing: 4px;font-size: 12px;">SELECT INTEREST</p></a>
+            <p style="
+      line-height: inherit;position: absolute;right: 185px;bottom: -2px;color: white; font-family: Avenir-Light; letter-spacing: 4px;font-size: 12px;">
+                SELECT INTEREST</p></a>
 
-      <div class="bar bar-footer foot-main-event" ng-click="showEventMainModal()">
-  <div class="title eve-foot-tit" style="font-family: Avenir-Light; letter-spacing: 3px;">{{ eventTitle | uppercase}}</div>
-</div>
+        <div class="bar bar-footer foot-main-event" ng-click="showEventMainModal()">
+            <div class="title eve-foot-tit" style="font-family: Avenir-Light; letter-spacing: 3px;">{{ eventTitle |
+                uppercase}}
+            </div>
+        </div>
 
-              <div id="map" data-tap-disabled="true"></div>
+        <div id="map" data-tap-disabled="true"></div>
     </ion-content>
 
 </ion-view>

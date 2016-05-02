@@ -23,29 +23,29 @@
 </div>
 
               <ion-list class="cat-list">
-<!--         <div ng-repeat="group in groups" class="cat-rep">
+        <div ng-repeat="group in groups" class="cat-rep">
           <ion-item class="item item-trns"
                     ng-click="toggleGroup(group)"
                     ng-class="{active: isGroupShown(group)}">
             &nbsp;
-                    <div class="enjoy-css">{{group.name}}<p ng-repeat="X in eventnumber" style="color: white;text-align: right;padding-right: 30px;">{{X}}</p>
+                    <div class="enjoy-css">{{group.name | uppercase}}<p ng-repeat="X in eventnumber" style="color: white;text-align: right;padding-right: 30px;">{{X}}</p>
 
         </div>
 <hr class="style-one">
           </ion-item>
           <ion-item class="item-accordion item item-trns"
-                    ng-repeat="item in group.items"
+                    ng-repeat="item in group.children"
                     ng-show="isGroupShown(group)" >
                     <a ng-click="gotoSubCategory()">
-                    <div class="enjoy-css">{{ item.subId }}<p ng-repeat="X in eventnumber" style="color: white;text-align: right;padding-right: 30px;">{{X}}</p>
+                    <div class="enjoy-css">{{ item.name | uppercase }}<p ng-repeat="X in eventnumber" style="color: white;text-align: right;padding-right: 30px;">{{X}}</p>
             </div>
 </a>
 <hr class="style-one">
 
           </ion-item>
-        </div> -->
+        </div>
 
-<div ng-repeat="item in categoryList" class="cat-rep">
+<!-- <div ng-repeat="item in categoryList" class="cat-rep">
 
           <ion-item class="item item-trns"
                     ng-click="gotoSubCategory()" >
@@ -53,7 +53,7 @@
                     <div class="enjoy-css" style="font-family: Avenir-Light; letter-spacing: 4px;font-weight: bold;font-size: 15px">{{item.name | uppercase}} </div>
 <hr class="style-one">
           </ion-item>
-</div>
+</div> -->
       </ion-list>
     </ion-content>
 <!-- </ion-view> -->

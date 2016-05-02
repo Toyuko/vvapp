@@ -1,27 +1,33 @@
-app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, ActiveEvent, $cordovaGeolocation, $http, $ionicModal, ionicDatePicker, $filter, $state, $timeout) {
+app.controller('MainCtrl', function ($scope, $ionicLoading, $compile, VenVast, ActiveEvent, $cordovaGeolocation, $http, $ionicModal, ionicDatePicker, $filter, $state, $timeout) {
     $scope.selectedDate = $filter('date')(new Date(), 'MMMM dd, yyyy');
 
 
-    $scope.groups = [];
+    // $scope.groups = [];
 
-    $scope.groups = [
-        { name: 'RESTRAUNTS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-        { name: 'LIFESTYLE', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-        { name: 'CLUBS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-        { name: 'NETWORKING', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-        { name: 'OTHER', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-        { name: 'VENVAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-        { name: 'SUPERFAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-    ];
+    // $scope.groups = [
+    //     {name: 'RESTRAUNTS', id: 1, items: [{subName: 'SubGrup1', subId: '1-1'}, {subName: 'SubGrup1', subId: '1-2'}]},
+    //     {name: 'LIFESTYLE', id: 1, items: [{subName: 'SubGrup1', subId: '1-1'}, {subName: 'SubGrup1', subId: '1-2'}]},
+    //     {name: 'CLUBS', id: 1, items: [{subName: 'SubGrup1', subId: '1-1'}, {subName: 'SubGrup1', subId: '1-2'}]},
+    //     {name: 'NETWORKING', id: 1, items: [{subName: 'SubGrup1', subId: '1-1'}, {subName: 'SubGrup1', subId: '1-2'}]},
+    //     {name: 'OTHER', id: 1, items: [{subName: 'SubGrup1', subId: '1-1'}, {subName: 'SubGrup1', subId: '1-2'}]},
+    //     {name: 'VENVAST', id: 1, items: [{subName: 'SubGrup1', subId: '1-1'}, {subName: 'SubGrup1', subId: '1-2'}]},
+    //     {name: 'SUPERFAST', id: 1, items: [{subName: 'SubGrup1', subId: '1-1'}, {subName: 'SubGrup1', subId: '1-2'}]},
+    // ];
 
-    $scope.gotoSubCategory = function() {
+    //   $http.get("http://venvast.com/category")
+    //      .then(function(response) {
+    // $scope.categoryList = response.data;
+    //     });
+
+
+    $scope.gotoSubCategory = function () {
         $scope.modalCatagory.hide();
         $state.go('home.subcategory');
     };
 
     //Accordion Event Detail
 
-    $scope.toggleGroup = function(group) {
+    $scope.toggleGroup = function (group) {
         // alert(group);
         if ($scope.isGroupShown(group)) {
             $scope.shownGroup = null;
@@ -29,14 +35,14 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
             $scope.shownGroup = group;
         }
     };
-    $scope.isGroupShown = function(group) {
+    $scope.isGroupShown = function (group) {
         return $scope.shownGroup === group;
     };
 
 
-    $scope.openCalender = function() {
+    $scope.openCalender = function () {
         var ipObj1 = {
-            callback: function(val) { //Mandatory
+            callback: function (val) { //Mandatory
                 console.log('Return value from the datepicker popup is : ' + val, new Date(val));
                 $scope.selectedDate = $filter('date')(new Date(val), 'MMMM dd yyyy');
             },
@@ -60,6 +66,7 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
 
         ionicDatePicker.openDatePicker(ipObj1);
+        console.log(ionicDatePicker);
 
     };
 
@@ -67,18 +74,17 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
     $ionicModal.fromTemplateUrl('app/home/catagory.html', {
         scope: $scope,
         animation: 'slide-in-down'
-    }).then(function(modal) {
+    }).then(function (modal) {
 
 
-
-       $ionicLoading.show({
-          template: '<ion-spinner></ion-spinner><p>Loading nearest events</p>'
-       });
+        $ionicLoading.show({
+            template: '<ion-spinner></ion-spinner><p>Loading nearest events</p>'
+        });
 
         $http.get("http://venvast.com/category")
-            .then(function(response) {
-       $scope.categoryList = response.data;
-           }); 
+            .then(function (response) {
+                $scope.categoryList = response.data;
+            });
 
 
         $scope.modalCatagory = modal;
@@ -86,21 +92,21 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
 
     });
 
-    $scope.gotoCategoryModal = function() {
+    $scope.gotoCategoryModal = function () {
         $scope.modalCatagory.show();
     };
 
 
     $scope.SubTab = false;
 
-    $scope.initialize = function() {
+    $scope.initialize = function () {
         //MAP WORK GOES HERE
         var lat;
         var lon;
-        var posOptions = { timeout: 10000, enableHighAccuracy: false };
+        var posOptions = {timeout: 10000, enableHighAccuracy: false};
         $cordovaGeolocation
             .getCurrentPosition(posOptions)
-            .then(function(position) {
+            .then(function (position) {
                 var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                 // console.log(""+position.coords.latitude);
                 // console.log(position.coords.longitude);
@@ -131,21 +137,22 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
                     title: 'Current Location'
                 });
 
-                google.maps.event.addListener(marker, 'click', function() {
+                google.maps.event.addListener(marker, 'click', function () {
                     //infowindow.open(map, marker);
                     //footer trigger here
                 });
 
                 $scope.mapsf = map;
-            }, function(err) {
+            }, function (err) {
                 console.log(err);
             });
         $scope.distanceLoc = [];
         var tempCount = 9999999999999999999999999;
         var eventPromise = VenVast.GetAllEvents()
-        eventPromise.then(function(result) {
-            result.forEach(function(element, index, array) {
+        eventPromise.then(function (result) {
+            result.forEach(function (_element, index, array) {
 
+                var element = _element;
                 var lat = element.latitude;
                 var lon = element.longitude;
                 var name = element.title;
@@ -176,7 +183,6 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
                 $scope.distanceLoc.push(dist);
 
 
-
                 // console.log($scope.distanceLoc[i]);
                 if (tempCount > $scope.distanceLoc[index]) {
                     tempCount = $scope.distanceLoc[index];
@@ -195,11 +201,10 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
                 });
                 $scope.eventId = -1;
 
-                google.maps.event.addListener(marker, 'click', function() {
-                    // alert(id);
-                    $scope.eventId = id;
-                    infowindow.open($scope.mapsf, marker);
-                    ActiveEvent.lookup(id); //sets active event
+                google.maps.event.addListener(marker, 'click', function () {
+
+                    //show eveny modal
+                    showEventModal(element);
                 });
 
                 if ($scope.eventId == -1) {
@@ -207,50 +212,52 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
                 } else {
                     $scope.eventIdforSearch = $scope.eventId;
                 }
+
+                if (index == array.length - 1) {
+                    showEventModal(element, true);
+                    $ionicLoading.hide();
+                }
                 // 
                 // console.log($scope.eventIdforSearch);
 
-                $scope.clickInfoWindow = function(num) {
-                    console.log(num);
+                /*$scope.clickInfoWindow = function (num) {
+                 console.log(num);
 
-                    $scope.eventIdforSearch = num;
-                    // alert($scope.eventId);
-                    var specificEvent = VenVast.GetSpecificEvent($scope.eventIdforSearch);
-                    specificEvent.then(function(result) {
+                 $scope.eventIdforSearch = num;
+                 // alert($scope.eventId);
+                 var specificEvent = VenVast.GetSpecificEvent($scope.eventIdforSearch);
+                 specificEvent.then(function (result) {
 
-                        $scope.eventTitle = result.title;
-                        // alert($scope.eventTitle)
-                        // console.log(result);
-
-
-                        $ionicModal.fromTemplateUrl('app/home/event-InfoModal.html', {
-                            scope: $scope,
-                            animation: 'slide-in-up'
-                        }).then(function(modal) {
-                            $scope.eventDescription = result.details;
-                            $scope.eventStartDate = result.start_date;
-                            $scope.eventStartTime = result.start_time;
-                            $scope.eventTitle = result.title;
-                            $ionicLoading.hide();
-
-                            // $scope.eventStartTime = $filter('date')(new Date($scope.eventSingleData.start_time), 'hh:mm');
-
-                            // var hoursLeft = Math.floor( $('.totalMin').html() / 60);
-
-                            // $scope.eventStartTime = $scope.eventSingleData.start_time;
+                 $scope.eventTitle = result.title;
+                 // alert($scope.eventTitle)
+                 // console.log(result);
 
 
+                 $ionicModal.fromTemplateUrl('app/home/event-InfoModal.html', {
+                 scope: $scope,
+                 animation: 'slide-in-up'
+                 }).then(function (modal) {
+                 $scope.eventDescription = result.details;
+                 $scope.eventStartDate = result.start_date;
+                 $scope.eventStartTime = result.start_time;
+                 $scope.eventTitle = result.title;
+                 $ionicLoading.hide();
 
-                            $scope.modalMainEvent = modal;
-                        });
+                 // $scope.eventStartTime = $filter('date')(new Date($scope.eventSingleData.start_time), 'hh:mm');
+
+                 // var hoursLeft = Math.floor( $('.totalMin').html() / 60);
+
+                 // $scope.eventStartTime = $scope.eventSingleData.start_time;
 
 
+                 $scope.modalMainEvent = modal;
+                 });
 
-                    });
+
+                 });
 
 
-                };
-
+                 };*/
 
 
             });
@@ -258,31 +265,47 @@ app.controller('MainCtrl', function($scope, $ionicLoading, $compile, VenVast, Ac
             // console.log($scope.nearestEventId);
 
             // console.log($scope.distanceLoc);
-            $scope.clickInfoWindow($scope.eventIdforSearch);
+            // $scope.clickInfoWindow($scope.eventIdforSearch);
 
         });
     };
 
-    $scope.toggleEvent = function(group) {
+    $scope.toggleEvent = function (group) {
         if ($scope.isGroupShown(group)) {
             $scope.shownGroup = null;
         } else {
             $scope.shownGroup = group;
         }
     };
-    $scope.isGroupShown = function(group) {
+    $scope.isGroupShown = function (group) {
         return $scope.shownGroup === group;
     };
 
-    $scope.showEventMainModal = function() {
+    $scope.showEventMainModal = function () {
         $scope.modalMainEvent.show();
     };
-    $scope.closeModal = function(num) {
+    $scope.closeModal = function (num) {
         $scope.modalMainEvent.hide();
     };
 
+    function showEventModal(element, notShow) {
+        $scope.eventId = element.id;
+        $ionicModal.fromTemplateUrl('app/home/event-InfoModal.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.eventDescription = element.details;
+            $scope.eventStartDate = element.start_date;
+            $scope.eventStartTime = element.start_time;
+            $scope.eventTitle = element.title;
+            $ionicLoading.hide();
+            $scope.modalMainEvent = modal;
+            if (!notShow) $scope.modalMainEvent.show();
+        });
+    }
 
-    $timeout(function() {
+
+    $timeout(function () {
         $scope.initialize();
     }, 100);
     // google.maps.event.addDomListener(window, 'load', initialize);

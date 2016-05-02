@@ -40,15 +40,15 @@ app.controller('EventDetailCtrl', function($scope, $ionicLoading, $compile, $ion
 
         $scope.groups = [];
 
-        $scope.groups = [
-            { name: 'RESTRAUNTS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-            { name: 'LIFESTYLE', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-            { name: 'CLUBS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-            { name: 'NETWORKING', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-            { name: 'OTHER', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-            { name: 'VENVAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-            { name: 'SUPERFAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
-        ];
+        // $scope.groups = [
+        //     { name: 'RESTRAUNTS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
+        //     { name: 'LIFESTYLE', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
+        //     { name: 'CLUBS', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
+        //     { name: 'NETWORKING', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
+        //     { name: 'OTHER', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
+        //     { name: 'VENVAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
+        //     { name: 'SUPERFAST', id: 1, items: [{ subName: 'SubGrup1', subId: '1-1' }, { subName: 'SubGrup1', subId: '1-2' }] },
+        // ];
 
         $scope.gotoSubCategory = function() {
             $scope.modalCatagory.hide();
@@ -106,15 +106,21 @@ app.controller('EventDetailCtrl', function($scope, $ionicLoading, $compile, $ion
     $http.get("http://venvast.com/event/" + $scope.EventId + "")
         .then(function(response) {
             $scope.eventSingleData = response.data;
-            // alert(JSON.stringify($scope.eventSingleData.longitude))
             var longi = JSON.stringify($scope.eventSingleData.longitude);
             var lati = JSON.stringify($scope.eventSingleData.latitude);
 
             $scope.eventTitle = $scope.eventSingleData.title;
+            $scope.eventVenueId = $scope.eventSingleData.venue_id;
+// alert($scope.eventVenueId);
 
-            // function initialize() {
-            // alert(longi);
-            // alert();
+    $http.get("http://venvast.com/venue/"+$scope.eventVenueId+"")
+        .then(function(response) {
+// alert(JSON.stringify(response.data.name) );
+
+$scope.venueName = response.data.name;
+
+        })
+
             var myLatlng = new google.maps.LatLng(lati, longi);
 
             var mapOptions = {

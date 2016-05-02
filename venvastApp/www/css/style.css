@@ -146,9 +146,9 @@ ion-view {
     background-color: transparent important; /* or transparent, or background:none */
 }
 
- .scroll-content {
-    overflow: visible !important;
-} 
+.scroll-content {
+    /*overflow: visible !important;*/
+}
 
 .font {
     /*font: normal normal bold 20px/1 Arial, Helvetica, sans-serif;*/
@@ -260,14 +260,14 @@ height: 320px
 
 .tabs {
     background: none !important;
-/ / border-color : black !important;
+/ / border-color: black !important;
     width: 80%;
     margin-left: -50px;
     border-bottom: 0px !important;
 }
 
 .tabs .tab-item {
-/ / margin : 10 px;
+/ / margin: 10 px;
 }
 
 .interest-btn {
@@ -401,16 +401,14 @@ a {
     color: #fff;
 }
 
-
-.title.title-center.header-item{
-   /* font-size: 113%;
-    border-bottom: 1px solid rgba(255,255,255,0.21) !important;
-=======
 .title.title-center.header-item {
-    font-size: 113%;
-    /*border-bottom: 1px solid rgba(255,255,255,0.21) !important;*/
+    /* font-size: 113%;
+     border-bottom: 1px solid rgba(255,255,255,0.21) !important;
+ =======
+ .title.title-center.header-item {
+     font-size: 113%;
+     /*border-bottom: 1px solid rgba(255,255,255,0.21) !important;*/
 
-      
     text-align: center;
     margin-top: 25px;
     margin-left: 5px;
@@ -419,8 +417,7 @@ a {
     letter-spacing: 7px;
     font-weight: bold;
     left: 0px !important;
-    right: 0px !important; 
-
+    right: 0px !important;
 
 }
 
