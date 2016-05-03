@@ -83,7 +83,7 @@ app.controller('MainCtrl', function ($scope, $ionicLoading, $compile, VenVast, A
 
         $http.get("http://venvast.com/category")
             .then(function (response) {
-                $scope.categoryList = response.data;
+                $scope.groups = response.data;
             });
 
 

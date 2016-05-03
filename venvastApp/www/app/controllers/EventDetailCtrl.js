@@ -78,7 +78,7 @@ app.controller('EventDetailCtrl', function($scope, $ionicLoading, $compile, $ion
         });
         $http.get("http://venvast.com/category")
             .then(function(response) {
-                $scope.categoryList = response.data;
+                $scope.groups = response.data;
             });
 
 
